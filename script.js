@@ -25,28 +25,26 @@ function removeSmallest(numbers) {
 console.log(removeSmallest([5, 3, 2, 1, 4]));
 
 
-function countPositivesSumNegatives(input) {
+function countPositivesSumNegatives(input) {  
     let max = 0;
     let min = 0;
     let resMass = [max, min];
-
-    if(input.length > 0){
-        for(let i = 0; i < input.length; i++){
-
-            if(input[i] > 0){
-                max += input[i];
-                i++;
-            }else{
-                min += input[i];
-                i++;
-            }
-            
-        }
-    }else{
-        return input;
+    if(input.length > 1 && input.filter((num) => num > 0) && input.filter((num) => num < 0)){
+        max = input.filter((num) => num > 0).length;
+        min = input.filter((num) => num < 0).reduce((first, second) => first + second);
+        resMass = [max, min];
+        return resMass;
+    } else if(input == null){
+        return resMass;
+    } else if(input.length > 1 && input.filter((num) => num > 0 && input.filter((num) => num < 0) == false)){
+        max = input.filter((num) => num > 0).length;
+        resMass = [max, min];
+        return resMass;
     }
-    console.log(input.length);
-    return resMass;
-  }
+}
 
-console.log(countPositivesSumNegatives([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]));
+
+console.log(countPositivesSumNegatives([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+
+
+console.log(([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15].filter((num) => num < 0)).length > 0);
