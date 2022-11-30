@@ -212,3 +212,26 @@ function friend(friends){
 
 //next
 
+function calculateYears(principal, interest, tax, desired) {
+    let res = 0;
+    for(let i = principal; i < desired; i+=res){
+        let P = ((principal + res) * interest);
+        let T = P * tax;
+        res += P - T;
+        console.log(1);
+    }
+    return res;
+}
+
+
+function calculateYears(principal, interest, tax, desired) {
+    // your code
+    var years = 0;
+    while(principal < desired){
+      principal += (principal * interest) * (1 - tax);
+      years++;
+    }
+    return years;
+}
+
+console.log(calculateYears(1000, 0.05, 0.18, 1100));
