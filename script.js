@@ -48,3 +48,24 @@ console.log(countPositivesSumNegatives([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 
 
 console.log(([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15].filter((num) => num < 0)).length > 0);
+
+
+
+
+
+
+
+/////////////////////////////////
+
+
+function squareDigits(num){
+    let str = num.toString();
+    let res = "";
+    for(let i = 0; i < str.length; i++){
+        res += str[i] * str[i];
+    }
+    return Number(res);
+  }
+
+
+console.log(squareDigits(3212));
