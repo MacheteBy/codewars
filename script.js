@@ -69,3 +69,18 @@ function squareDigits(num){
 
 
 console.log(squareDigits(3212));
+
+
+
+//next
+
+function getAge(inputString){
+    return Number(inputString[0]);
+    }
+
+
+    console.log(getAge("1 year old"));
+
+
+//next
+
