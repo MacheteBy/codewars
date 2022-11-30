@@ -166,3 +166,11 @@ function setAlarm(employed, vacation){
 
 
 console.log(setAlarm(true, false));
+
+//next
+
+class Kata {
+    static getVolumeOfCuboid(length, width, height) {
+      return length * width * height;
+    }
+  }
