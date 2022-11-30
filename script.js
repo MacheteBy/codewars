@@ -119,3 +119,44 @@ function findAverage(array) {
 
 
 console.log(findAverage([1, 2, 3, 4]));
+
+
+//next
+
+
+const quarterOf = (month) => {
+    let res;
+    if (month > 0 && month < 13) {
+        switch (month) {
+            case 1:
+            case 2:
+            case 3:
+                res = 1;
+                break;
+            case 4:
+            case 5:
+            case 6:
+                res = 2;
+                break;
+            case 7:
+            case 8:
+            case 9:
+                res = 3;
+                break;
+            case 10:
+            case 11:
+            case 12:
+                res = 4;
+                break;
+        }
+    }
+    return res;
+};
+
+console.log(quarterOf(5));
+
+
+
+//next
+
+
