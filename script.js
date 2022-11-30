@@ -84,3 +84,21 @@ function getAge(inputString){
 
 //next
 
+function isTriangle(a,b,c)
+{
+    if(a > 0 && b > 0 && c > 0){
+        let max = Math.max(a,b,c);
+        if(max == a){
+            return a < b + c;
+        } else if(max == b){
+            return b < a + c;
+        } else if(max == c){
+            return c < a + b;
+        }
+        return max;
+    }else{
+        return false;
+    }
+}
+
+console.log(isTriangle(7,2,9));
