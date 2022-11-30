@@ -25,18 +25,18 @@ function removeSmallest(numbers) {
 console.log(removeSmallest([5, 3, 2, 1, 4]));
 
 
-function countPositivesSumNegatives(input) {  
+function countPositivesSumNegatives(input) {
     let max = 0;
     let min = 0;
     let resMass = [max, min];
-    if(input.length > 1 && input.filter((num) => num > 0) && input.filter((num) => num < 0)){
+    if (input.length > 1 && input.filter((num) => num > 0) && input.filter((num) => num < 0)) {
         max = input.filter((num) => num > 0).length;
         min = input.filter((num) => num < 0).reduce((first, second) => first + second);
         resMass = [max, min];
         return resMass;
-    } else if(input == null){
+    } else if (input == null) {
         return resMass;
-    } else if(input.length > 1 && input.filter((num) => num > 0 && input.filter((num) => num < 0) == false)){
+    } else if (input.length > 1 && input.filter((num) => num > 0 && input.filter((num) => num < 0) == false)) {
         max = input.filter((num) => num > 0).length;
         resMass = [max, min];
         return resMass;
@@ -58,14 +58,14 @@ console.log(([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15].filter((nu
 /////////////////////////////////
 
 
-function squareDigits(num){
+function squareDigits(num) {
     let str = num.toString();
     let res = "";
-    for(let i = 0; i < str.length; i++){
+    for (let i = 0; i < str.length; i++) {
         res += str[i] * str[i];
     }
     return Number(res);
-  }
+}
 
 
 console.log(squareDigits(3212));
@@ -74,31 +74,48 @@ console.log(squareDigits(3212));
 
 //next
 
-function getAge(inputString){
+function getAge(inputString) {
     return Number(inputString[0]);
-    }
+}
 
 
-    console.log(getAge("1 year old"));
+console.log(getAge("1 year old"));
 
 
 //next
 
-function isTriangle(a,b,c)
-{
-    if(a > 0 && b > 0 && c > 0){
-        let max = Math.max(a,b,c);
-        if(max == a){
+function isTriangle(a, b, c) {
+    if (a > 0 && b > 0 && c > 0) {
+        let max = Math.max(a, b, c);
+        if (max == a) {
             return a < b + c;
-        } else if(max == b){
+        } else if (max == b) {
             return b < a + c;
-        } else if(max == c){
+        } else if (max == c) {
             return c < a + b;
         }
         return max;
-    }else{
+    } else {
         return false;
     }
 }
 
-console.log(isTriangle(7,2,9));
+console.log(isTriangle(7, 2, 9));
+
+
+//next
+
+function findAverage(array) {
+    if (array.length == 0) {
+        return 0;
+    } else {
+        let res = array.reduce(function (first, second) {
+            return first + second;
+        }, 0);
+        return res / array.length;
+    }
+}
+
+
+
+console.log(findAverage([1, 2, 3, 4]));
