@@ -160,3 +160,9 @@ console.log(quarterOf(5));
 //next
 
 
+function setAlarm(employed, vacation){
+    return employed !== false && vacation !== true;
+}
+
+
+console.log(setAlarm(true, false));
