@@ -196,3 +196,19 @@ function otherAngle(a, b) {
 
 
 console.log(otherAngle(60, 60));
+
+
+
+//next
+
+function friend(friends){
+    let result = friends.filter(word => word.length == 4);
+    return result;
+  }
+
+
+  console.log(friend("Ryan", "Kieran", "Mark"));
+
+
+//next
+
