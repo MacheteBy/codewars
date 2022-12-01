@@ -267,3 +267,6 @@ const reverseSeq = n => {
 function solution(string) {
     
 }
+
+
+console.log();
