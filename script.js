@@ -298,6 +298,8 @@ function solution(string) {
 
 //next
 
-  function addBinary(a,b) {
-
+function addBinary(a,b) {
+    return (a + b).toString(2);
 }
+
+console.log(addBinary(5, 4));
