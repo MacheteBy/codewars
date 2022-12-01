@@ -244,8 +244,9 @@ function longest(s1, s2) {
     let resStr = "";
     for(let i = 0; i < strFull.length; i++){
         if(!strFull[resStr[i]]){
-            resStr
+            resStr += strFull[i]; 
         }
+        return resStr;
     }
   }
 
