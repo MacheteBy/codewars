@@ -242,8 +242,10 @@ console.log(calculateYears(1000, 0.05, 0.18, 1100));
 function longest(s1, s2) {
     let strFull = s1 + s2;
     for(let i = 0; i < strFull.length; i++){
-        for(let k = 0; k < strFull.length; k++){
-            if(k !== strFull)
+        for(let k = 1; k < strFull.length; k++){
+            if(strFull[i] !== strFull[k]){
+                
+            }
         }
     }
     return strFull;
