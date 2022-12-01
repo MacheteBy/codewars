@@ -260,3 +260,10 @@ const reverseSeq = n => {
 
 
   console.log(reverseSeq(5));
+
+
+//next
+  // complete the function
+function solution(string) {
+    
+}
