@@ -269,4 +269,4 @@ function solution(string) {
 }
 
 
-console.log(solution());
+console.log(solution('camelCasing'));
