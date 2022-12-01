@@ -240,7 +240,11 @@ console.log(calculateYears(1000, 0.05, 0.18, 1100));
 //next
 
 function longest(s1, s2) {
-    // your code
+    let strFull = s1 + s2;
+    for(let i = 0; i < strFull.length; i++){
+        
+    }
+    return strFull;
   }
 
 
