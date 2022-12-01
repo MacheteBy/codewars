@@ -295,3 +295,9 @@ function solution(string) {
 
 
   console.log(solution("leaveFgSDdgd"));
+
+//next
+
+  function addBinary(a,b) {
+
+}
