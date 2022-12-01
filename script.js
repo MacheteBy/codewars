@@ -235,3 +235,14 @@ function calculateYears(principal, interest, tax, desired) {
 }
 
 console.log(calculateYears(1000, 0.05, 0.18, 1100));
+
+
+//next
+
+function longest(s1, s2) {
+    // your code
+  }
+
+
+
+console.log();
