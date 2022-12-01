@@ -241,13 +241,7 @@ console.log(calculateYears(1000, 0.05, 0.18, 1100));
 
 function longest(s1, s2) {
     let strFull = s1 + s2;
-    let resStr = "";
-    for(let i = 0; i < strFull.length; i++){
-        if(!strFull[resStr[i]]){
-            resStr += strFull[i]; 
-        }
-        return resStr;
-    }
+    return strFull.Set(strFull);
   }
 
 
