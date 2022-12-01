@@ -312,3 +312,12 @@ function cockroachSpeed(s) {
 
 
   console.log(cockroachSpeed(1.08));
+
+//next
+  function minMax(arr){
+    let res = arr.sort((a, b) => a - b);
+    let outRes = [res[0],res[res.length - 1]];
+    return outRes;
+  }
+
+  console.log(minMax([1, 6, 3, 4, 1]));
