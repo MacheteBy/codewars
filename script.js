@@ -269,4 +269,4 @@ function solution(string) {
 }
 
 
-console.log();
+console.log(solution());
