@@ -265,8 +265,33 @@ const reverseSeq = n => {
 //next
   // complete the function
 function solution(string) {
-    
+    // let indexElem = string.search(/[A-Z]/);
+    // return string.slice(0, string.search(/[A-Z]/)) + " " + string.slice(5, string.length);
+    let arr =  string.split(/([A-Z])/);
+    let res = [];
+    let str = "";
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i].length == 1){
+            res.push(arr[i]+arr[i+1]);
+        }else if(arr[0] == arr[i]){
+            res.push(arr[0]);
+        }
+    }
+    for(let i = 0; i < res.length; i++){
+        str += (res[i] + " ");
+    }
+    return str.substring(0, str.length - 1);
 }
 
 
-console.log(solution('camelCasing'));
+console.log(solution("leave"));
+
+
+
+function solution(string) {
+    return(string.replace(/([A-Z])/g, ' $1'));
+  
+  }
+
+
+  console.log(solution("leaveFgSDdgd"));
