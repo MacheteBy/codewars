@@ -245,4 +245,4 @@ function longest(s1, s2) {
 
 
 
-console.log(longest());
+console.log(longest("aretheyhere", "yestheyarehere"));
