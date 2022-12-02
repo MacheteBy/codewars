@@ -160,7 +160,7 @@ console.log(quarterOf(5));
 //next
 
 
-function setAlarm(employed, vacation){
+function setAlarm(employed, vacation) {
     return employed !== false && vacation !== true;
 }
 
@@ -171,28 +171,28 @@ console.log(setAlarm(true, false));
 
 class Kata {
     static getVolumeOfCuboid(length, width, height) {
-      return length * width * height;
+        return length * width * height;
     }
-  }
+}
 
 
 
 
 //next
 
-function sumStr(a,b) {
-  return String(Number(a) + Number(b));
+function sumStr(a, b) {
+    return String(Number(a) + Number(b));
 }
 
 
-console.log(sumStr("4","5"));
+console.log(sumStr("4", "5"));
 
 
 //next
 
 function otherAngle(a, b) {
     return 180 - (a + b);
-  }
+}
 
 
 console.log(otherAngle(60, 60));
@@ -201,20 +201,20 @@ console.log(otherAngle(60, 60));
 
 //next
 
-function friend(friends){
+function friend(friends) {
     let result = friends.filter(word => word.length == 4);
     return result;
-  }
+}
 
 
-  console.log(friend("Ryan", "Kieran", "Mark"));
+console.log(friend("Ryan", "Kieran", "Mark"));
 
 
 //next
 
 function calculateYears(principal, interest, tax, desired) {
     let res = 0;
-    for(let i = principal; i < desired; i+=res){
+    for (let i = principal; i < desired; i += res) {
         let P = ((principal + res) * interest);
         let T = P * tax;
         res += P - T;
@@ -227,9 +227,9 @@ function calculateYears(principal, interest, tax, desired) {
 function calculateYears(principal, interest, tax, desired) {
     // your code
     var years = 0;
-    while(principal < desired){
-      principal += (principal * interest) * (1 - tax);
-      years++;
+    while (principal < desired) {
+        principal += (principal * interest) * (1 - tax);
+        years++;
     }
     return years;
 }
@@ -243,7 +243,7 @@ function longest(s1, s2) {
     let strFull = s1 + s2;
     let outStr = [...new Set(strFull)].join('');
     return outStr;
-  }
+}
 
 
 
@@ -252,32 +252,32 @@ console.log(longest("aretheyhere", "yestheyarehere"));
 //next
 const reverseSeq = n => {
     let arr = [];
-    for(let i = n; i > 0; i--){
+    for (let i = n; i > 0; i--) {
         arr.push(i);
     }
     return arr;
-  };
+};
 
 
-  console.log(reverseSeq(5));
+console.log(reverseSeq(5));
 
 
 //next
-  // complete the function
+// complete the function
 function solution(string) {
     // let indexElem = string.search(/[A-Z]/);
     // return string.slice(0, string.search(/[A-Z]/)) + " " + string.slice(5, string.length);
-    let arr =  string.split(/([A-Z])/);
+    let arr = string.split(/([A-Z])/);
     let res = [];
     let str = "";
-    for(let i = 0; i < arr.length; i++){
-        if(arr[i].length == 1){
-            res.push(arr[i]+arr[i+1]);
-        }else if(arr[0] == arr[i]){
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i].length == 1) {
+            res.push(arr[i] + arr[i + 1]);
+        } else if (arr[0] == arr[i]) {
             res.push(arr[0]);
         }
     }
-    for(let i = 0; i < res.length; i++){
+    for (let i = 0; i < res.length; i++) {
         str += (res[i] + " ");
     }
     return str.substring(0, str.length - 1);
@@ -289,16 +289,16 @@ console.log(solution("leave"));
 
 
 function solution(string) {
-    return(string.replace(/([A-Z])/g, ' $1'));
-  
-  }
+    return (string.replace(/([A-Z])/g, ' $1'));
+
+}
 
 
-  console.log(solution("leaveFgSDdgd"));
+console.log(solution("leaveFgSDdgd"));
 
 //next
 
-function addBinary(a,b) {
+function addBinary(a, b) {
     return (a + b).toString(2);
 }
 
@@ -311,13 +311,30 @@ function cockroachSpeed(s) {
 }
 
 
-  console.log(cockroachSpeed(1.08));
+console.log(cockroachSpeed(1.08));
 
 //next
-  function minMax(arr){
+function minMax(arr) {
     let res = arr.sort((a, b) => a - b);
-    let outRes = [res[0],res[res.length - 1]];
+    let outRes = [res[0], res[res.length - 1]];
     return outRes;
+}
+
+console.log(minMax([1, 6, 3, 4, 1]));
+
+
+//next
+
+function findUniq(arr) {
+    let num = arr[0];
+    let res = 0;
+    for(let i = 0; i < arr.length; i++){
+        if(num !== arr[i]){
+            console.log(res = arr[i]);
+            return res = arr[i];
+        }
+    }
+     return res;
   }
 
-  console.log(minMax([1, 6, 3, 4, 1]));
+console.log(findUniq([ 1, 0, 0 ]));
