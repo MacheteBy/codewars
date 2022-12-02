@@ -336,14 +336,47 @@ function findUniq(numbers) {
 
 
 function findUniq(arr) {
-    arr.sort((a,b)=>a-b);
-    console.log(arr.sort((a,b)=>a-b));
-    console.log(arr[0]==arr[1]?arr.pop():arr[0]);
-    return arr[0]==arr[1]?arr.pop():arr[0];
-  }
+    arr.sort((a, b) => a - b);
+    console.log(arr.sort((a, b) => a - b));
+    console.log(arr[0] == arr[1] ? arr.pop() : arr[0]);
+    return arr[0] == arr[1] ? arr.pop() : arr[0];
+}
 
 
 console.log(findUniq([1, 0, 0]));
 
 //next
 
+function oddOrEven(array) {
+    let sumAllElem;
+    if (array.length > 1) {
+        sumAllElem = array.reduce(function (sum, element) {
+            return sum + element;
+        });
+    } else if (sumAllElem == 0) {
+        return 'even';
+    }
+    if (sumAllElem % 2 !== 0) {
+        return 'odd';
+    } else {
+        return 'even';
+    }
+}
+
+function oddOrEven(array) {
+    let sumAllElem = 0;
+    if (array.length >= 1) {
+        sumAllElem = array.reduce(function (sum, element) {
+            return sum + element;
+        });
+    }
+    if (sumAllElem % 2 !== 0) {
+        return 'odd';
+    } else if (sumAllElem == 0) {
+        return 'even';
+    } else {
+        return 'even';
+    }
+}
+
+console.log(oddOrEven([]));
