@@ -327,7 +327,7 @@ console.log(minMax([1, 6, 3, 4, 1]));
 
 function findUniq(numbers) {
     return numbers.find((e) => numbers.filter((v) => v===e).length === 1); 
-    let a = 10;
+    let a = 0;
      } 
 
 console.log(findUniq([ 1, 0, 0 ]));
