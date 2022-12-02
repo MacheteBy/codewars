@@ -326,7 +326,24 @@ console.log(minMax([1, 6, 3, 4, 1]));
 //next
 
 function findUniq(numbers) {
-    return numbers.find((e) => numbers.filter((v) => v===e).length === 1); 
-     } 
+    const map = new Map(Array.from(new Set(numbers)).map(v => ([v, 0])));
+    return Array.from(
+        numbers.slice(0, 3).reduce((a, c) => {
+            return map.set(c, map.get(c) + 1);
+        }, map)
+    ).find(([, v]) => v <= 1)[0];
+}
 
-console.log(findUniq([ 1, 0, 0 ]));
+
+function findUniq(arr) {
+    arr.sort((a,b)=>a-b);
+    console.log(arr.sort((a,b)=>a-b));
+    console.log(arr[0]==arr[1]?arr.pop():arr[0]);
+    return arr[0]==arr[1]?arr.pop():arr[0];
+  }
+
+
+console.log(findUniq([1, 0, 0]));
+
+//next
+
