@@ -385,20 +385,33 @@ console.log(oddOrEven([]));
 //next
 
 
-function checkForFactor (base, factor) {
-    return  base % factor ? false : true;
-  }
+function checkForFactor(base, factor) {
+    return base % factor ? false : true;
+}
 
-  console.log(checkForFactor(2453,5));
+console.log(checkForFactor(2453, 5));
 
 
-  //next
-  function checkForFactor(numbers){
-  const map = new Map(Array.from(new Set(numbers)).map(v => ([v, 0])));
+//next
+function checkForFactor(numbers) {
+    const map = new Map(Array.from(new Set(numbers)).map(v => ([v, 0])));
     return Array.from(
         numbers.slice(0, 3).reduce((a, c) => {
             return map.set(c, map.get(c) + 1);
         }, map)
     ).find(([, v]) => v <= 1)[0];
 }
+
+
+function stray(numbers) {
+    for (var i in numbers) {
+        if (numbers.indexOf(numbers[i]) === numbers.lastIndexOf(numbers[i])) {
+            return numbers[i]
+        }
+    }
+}
+
+
+//next
+
 
