@@ -531,3 +531,14 @@ function past(h, m, s){
   }
 
   console.log(past(1,0,1));
+
+
+  //next
+
+  function highAndLow(numbers){
+    let arr = numbers.split(" ");
+    arr.sort((a, b) => a -b);
+    return `${arr.slice(-1)} ${arr[0]}`;
+  }
+
+  console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"));
