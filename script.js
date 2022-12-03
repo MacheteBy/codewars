@@ -466,8 +466,8 @@ function isPangram(string) {
     let allSumbol = "abcdefghijklmnopqrstuvwxyz";
     let regex = (/[^\w\s]+/g);
     let lowercase = string.toLowerCase().replace(regex, "");
-    for(let i = 0; i < allSumbol.length; i++){
-        if(lowercase.indexOf(allSumbol[i]) === -1){
+    for (let i = 0; i < allSumbol.length; i++) {
+        if (lowercase.indexOf(allSumbol[i]) === -1) {
             return false;
         }
     }
@@ -479,8 +479,18 @@ console.log(isPangram("This is not a pangram."));
 //next
 
 function rowSumOddNumbers(n) {
-	return Math.pow(n,3);
+    return Math.pow(n, 3);
 }
 
 
 console.log(rowSumOddNumbers(42));
+
+//next
+
+function sortArray(array) {
+    let res = []
+    return array.filter((first, second) => first % 2 && res.push(second)).sort((first, second) => first - second).forEach((first, second) => array[res[second]] = first);
+}
+
+
+console.log();
