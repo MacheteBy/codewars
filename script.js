@@ -463,7 +463,15 @@ console.log(likes([]));
 //next
 
 function isPangram(string) {
-    //...
+    let allSumbol = "abcdefghijklmnopqrstuvwxyz";
+    let regex = (/[^\w\s]+/g);
+    let lowercase = string.toLowerCase().replace(regex, "");
+    for(let i = 0; i < allSumbol.length; i++){
+        if(lowercase.indexOf(allSumbol[i]) === -1){
+            return false;
+        }
+    }
+    return true;
 }
 
-console.log(isPangram());
+console.log(isPangram("This is not a pangram."));
