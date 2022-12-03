@@ -495,3 +495,10 @@ function sortArray(array) {
 
 
 console.log(sortArray([5, 3, 2, 8, 1, 4]));
+
+//next
+function SeriesSum(n){
+  // Happy Coding ^_^
+}
+
+console.log(SeriesSum(2));
