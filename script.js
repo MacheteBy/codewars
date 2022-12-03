@@ -475,3 +475,12 @@ function isPangram(string) {
 }
 
 console.log(isPangram("This is not a pangram."));
+
+//next
+
+function rowSumOddNumbers(n) {
+	return Math.pow(n,3);
+}
+
+
+console.log(rowSumOddNumbers(42));
