@@ -420,3 +420,4 @@ function greet(name, owner) {
 }
 
 console.log(greet('Daniel', 'Daniel'));
+console.log(greet('Daniel', 'Daniel'));
