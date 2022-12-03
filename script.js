@@ -447,7 +447,7 @@ function likes(names) {
     if(col == 1){
         return `${names[0]} likes this`;
     }else if(col == 2){
-        return `${names[0]}`
+        return `${names[0]} and ${names[1]} like this`;
     }
     return col;
   }
