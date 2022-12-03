@@ -423,4 +423,3 @@ console.log(greet('Daniel', 'Daniel'));
 console.log(greet('Daniel', 'Daniel'));
 console.log(greet('Daniel', 'Daniel'));
 console.log(greet('Daniel', 'Daniel'));
-console.log(greet('Daniel', 'Daniel'));
