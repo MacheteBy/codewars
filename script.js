@@ -424,4 +424,8 @@ console.log(greet('Daniel', 'Daniel'));
 
 //next
 
+function findShort(s){
 
+}
+
+console.log(findShort("bitcoin take over the world maybe who knows perhaps"));
