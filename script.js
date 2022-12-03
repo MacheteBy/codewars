@@ -380,3 +380,13 @@ function oddOrEven(array) {
 }
 
 console.log(oddOrEven([]));
+
+
+//next
+
+
+function checkForFactor (base, factor) {
+    return  base % factor ? false : true;
+  }
+
+  console.log(checkForFactor(2453,5));
