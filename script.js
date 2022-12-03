@@ -497,17 +497,17 @@ function sortArray(array) {
 console.log(sortArray([5, 3, 2, 8, 1, 4]));
 
 //next
-function SeriesSum(n){
+function SeriesSum(n) {
     let start = 1;
     let res = 1;
-    if(n === 0){
+    if (n === 0) {
         return (0).toFixed(2);
-    }else{
-        for(let i = 1; i <= n; i++){
-    res += 1/start;
-    start += 3;
-  }
-  return (res -1).toFixed(2);
+    } else {
+        for (let i = 1; i <= n; i++) {
+            res += 1 / start;
+            start += 3;
+        }
+        return (res - 1).toFixed(2);
     }
 }
 
@@ -517,35 +517,38 @@ console.log(SeriesSum(0));
 
 //next
 
-function sumTwoSmallestNumbers(numbers) {  
-    let sort = numbers.sort((a, b) => a -b);
+function sumTwoSmallestNumbers(numbers) {
+    let sort = numbers.sort((a, b) => a - b);
     return sort[0] + sort[1];
-  }
+}
 
 console.log(sumTwoSmallestNumbers([5, 8, 12, 19, 22]));
 
 //next
 
-function past(h, m, s){
+function past(h, m, s) {
     return (h * 60 * 60 * 1000) + (m * 60 * 1000) + (s * 1000);
-  }
+}
 
-  console.log(past(1,0,1));
+console.log(past(1, 0, 1));
 
 
-  //next
+//next
 
-  function highAndLow(numbers){
+function highAndLow(numbers) {
     let arr = numbers.split(" ");
-    arr.sort((a, b) => a -b);
+    arr.sort((a, b) => a - b);
     return `${arr.slice(-1)} ${arr[0]}`;
-  }
+}
 
-  console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"));
+console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4"));
 
 
-  //next
+//next
 
-  function validatePIN (pin) {
-    //return true or false
-  }
+function validatePIN(pin) {
+    return (pin.length == 4 || pin.length == 6) && (/^\d+$/.test(pin)) ? true : false;
+}
+
+
+console.log(validatePIN('0000'));
