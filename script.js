@@ -442,3 +442,8 @@ console.log(findShort("bitcoin take over the world maybe who knows perhaps"));
 
 //next
 
+function likes(names) {
+    // TODO
+  }
+
+  console.log(likes('Peter'));
