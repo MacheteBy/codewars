@@ -498,7 +498,17 @@ console.log(sortArray([5, 3, 2, 8, 1, 4]));
 
 //next
 function SeriesSum(n){
-  // Happy Coding ^_^
+    let start = 1;
+    let res = 1;
+    if(n === 0){
+        return (0).toFixed(2);
+    }else{
+        for(let i = 1; i <= n; i++){
+    res += 1/start;
+    start += 3;
+  }
+  return (res -1).toFixed(2);
+    }
 }
 
-console.log(SeriesSum(2));
+console.log(SeriesSum(0));
