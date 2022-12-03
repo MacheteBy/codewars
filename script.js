@@ -488,9 +488,10 @@ console.log(rowSumOddNumbers(42));
 //next
 
 function sortArray(array) {
-    let res = []
-    return array.filter((first, second) => first % 2 && res.push(second)).sort((first, second) => first - second).forEach((first, second) => array[res[second]] = first);
+    let ressArr = array.filter(x => x % 2).sort((a, b) => a - b);
+    return array.map(x => x % 2 ? ressArr.shift() : x);
 }
 
 
-console.log();
+
+console.log(sortArray([5, 3, 2, 8, 1, 4]));
