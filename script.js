@@ -527,7 +527,7 @@ console.log(sumTwoSmallestNumbers([5, 8, 12, 19, 22]));
 //next
 
 function past(h, m, s){
-    //#Happy Coding! ^_^
+    return (h * 60 * 60 * 1000) + (m * 60 * 1000) + (s * 1000);
   }
 
   console.log(past(1,0,1));
