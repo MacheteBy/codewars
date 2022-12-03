@@ -415,8 +415,8 @@ function stray(numbers) {
 //next
 
 
-function greet (name, owner) {
-    // Add code here
-  }
+function greet(name, owner) {
+    return name == owner ? 'Hello boss' : 'Hello guest';
+}
 
-  console.log(greet('Daniel', 'Daniel'));
+console.log(greet('Daniel', 'Daniel'));
