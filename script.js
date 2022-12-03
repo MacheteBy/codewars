@@ -444,7 +444,12 @@ console.log(findShort("bitcoin take over the world maybe who knows perhaps"));
 
 function likes(names) {
     let col = names.length;
+    if(col == 1){
+        return `${names[0]} likes this`;
+    }else if(col == 2){
+        return `${names[0]}`
+    }
     return col;
   }
 
-  console.log(likes(['Peter']));
+  console.log(likes(["Jacob", "Alex"] ));
