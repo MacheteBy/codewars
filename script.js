@@ -424,8 +424,12 @@ console.log(greet('Daniel', 'Daniel'));
 
 //next
 
-function findShort(s){
-
+function findShort(s) {
+    let arr = s.split(" ");
+    let arrNum = arr.map(function (item) {
+        return item.length;
+    });
+    return Math.min(...arrNum);
 }
 
 console.log(findShort("bitcoin take over the world maybe who knows perhaps"));
