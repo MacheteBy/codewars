@@ -443,7 +443,8 @@ console.log(findShort("bitcoin take over the world maybe who knows perhaps"));
 //next
 
 function likes(names) {
-    // TODO
+    let col = names.length;
+    return col;
   }
 
-  console.log(likes('Peter'));
+  console.log(likes(['Peter']));
