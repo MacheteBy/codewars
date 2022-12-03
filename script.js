@@ -512,3 +512,11 @@ function SeriesSum(n){
 }
 
 console.log(SeriesSum(0));
+
+
+
+//next
+
+function sumTwoSmallestNumbers(numbers) {  
+    //Code here
+  }
