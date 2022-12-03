@@ -433,8 +433,8 @@ function findShort(s) {
 }
 
 
-function findShort(s){
-    return Math.min(...s.split(" ").map (s => s.length));
+function findShort(s) {
+    return Math.min(...s.split(" ").map(s => s.length));
 }
 
 console.log(findShort("bitcoin take over the world maybe who knows perhaps"));
@@ -444,18 +444,26 @@ console.log(findShort("bitcoin take over the world maybe who knows perhaps"));
 
 function likes(names) {
     let col = names.length;
-    if(col == 1){
+    if (col == 1) {
         return `${names[0]} likes this`;
-    }else if(col == 2){
+    } else if (col == 2) {
         return `${names[0]} and ${names[1]} like this`;
-    }else if(col == 3){
+    } else if (col == 3) {
         return `${names[0]}, ${names[1]} and ${names[2]} like this`;
-    }else if(col > 3){
+    } else if (col > 3) {
         return `${names[0]}, ${names[1]} and ${names.length-2} others like this`;
-    }else if(col == 0){
-        return  `no one likes this`;
+    } else if (col == 0) {
+        return `no one likes this`;
     }
     return col;
-  }
+}
 
-  console.log(likes([]));
+console.log(likes([]));
+
+//next
+
+function isPangram(string) {
+    //...
+}
+
+console.log(isPangram());
