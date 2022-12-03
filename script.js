@@ -520,3 +520,5 @@ console.log(SeriesSum(0));
 function sumTwoSmallestNumbers(numbers) {  
     //Code here
   }
+
+console.log(sumTwoSmallestNumbers());
