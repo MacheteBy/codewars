@@ -581,4 +581,4 @@ function correct(string)
 	// your code here
 }
 
-console.log();
+console.log(correct());
