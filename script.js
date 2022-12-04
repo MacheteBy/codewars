@@ -581,4 +581,4 @@ function correct(string)
 	// your code here
 }
 
-console.log(correct());
+console.log(correct("L0ND0N"));
