@@ -576,11 +576,10 @@ function findOdd(A) {
             if(A[i] == A[j]){
                 col++;
             }
-            if(col % 2 !== 0){
-                return A[i];
-            }
         }
-        return col;
+        if(col % 2 !== 0){
+            return A[i];
+        }
     }
 }
 
