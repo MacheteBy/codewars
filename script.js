@@ -578,7 +578,7 @@ console.log(findOdd([20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5]));
 
 function correct(string)
 {
-    return string.replace(/0/g, "O");
+    return string.replace(/0/g, "O").replace(/1/g, "I").replace(/5/g, "S");
 }
 
 console.log(correct("L0ND0N"));
