@@ -556,7 +556,7 @@ console.log(validatePIN('0000'));
 //next
 
 function findOdd(A) {
-    //happy coding!
+    A.filter();
     return 0;
   }
 
