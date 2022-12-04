@@ -560,4 +560,4 @@ function findOdd(A) {
     return 0;
   }
 
-  console.log(findOdd());
+  console.log(findOdd([1,1,2]));
