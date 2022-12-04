@@ -557,30 +557,16 @@ console.log(validatePIN('0000'));
 
 function findOdd(A) {
     for (let i = 0; i < A.length; i++) {
-        let count = 0;
-        for (let j = 0; j < A.length; j++)
-        {
-            if (A[i] == A[j])
-                count++;
-        }
-        if (count % 2 != 0)
-            return A[i];
-    }
-    return -1;
-}
-
-function findOdd(A) {
-    for(let i = 0; i < A.length; i++){
         let col = 0;
-        for(let j = 0; j < A.length; j++){
-            if(A[i] == A[j]){
+        for (let j = 0; j < A.length; j++) {
+            if (A[i] == A[j]) {
                 col++;
             }
         }
-        if(col % 2 !== 0){
+        if (col % 2 !== 0) {
             return A[i];
         }
     }
 }
 
-console.log(findOdd([20,1,-1,2,-2,3,3,5,5,1,2,4,20,4,-1,-2,5]));
+console.log(findOdd([20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5]));
