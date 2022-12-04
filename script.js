@@ -556,7 +556,6 @@ console.log(validatePIN('0000'));
 //next
 
 function findOdd(A) {
-    
     for (let i = 0; i < A.length; i++) {
         let count = 0;
         for (let j = 0; j < A.length; j++)
@@ -568,6 +567,10 @@ function findOdd(A) {
             return A[i];
     }
     return -1;
+}
+
+function findOdd(A) {
+    
 }
 
 console.log(findOdd([1, 2, 2, 3, 3, 3, 4, 3, 3, 3, 2, 2, 1]));
