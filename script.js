@@ -747,7 +747,7 @@ console.log(uniqueInOrder('AAAABBBCCDAABBB'));
 
 //next
 function removeEveryOther(arr) {
-    return arr.filter((a, b) => !(b%2));
+    return arr.filter((a, b) => !(b % 2));
 }
 
 
@@ -756,4 +756,3 @@ console.log(removeEveryOther([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 
 
 //next
-
