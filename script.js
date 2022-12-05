@@ -693,8 +693,8 @@ console.log(removeExclamationMarks("xIctVKMGIA!IWTfzYBsvx RtdyThYWSd!VKfTjVigrK"
 
 //next
 function litres(time) {
-    return 0;
+    return Math.floor(time * 0.5);
   }
 
 
-console.log(litres(2));
+console.log(litres(1.4));
