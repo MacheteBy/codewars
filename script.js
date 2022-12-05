@@ -612,8 +612,10 @@ function switchItUp(number){
     return res;
     }
 
-
 console.log(switchItUp(5));
+
+
+//next
 
 function hoopCount (n) {
     if(n >= 10){
@@ -624,3 +626,12 @@ function hoopCount (n) {
  }
 
  console.log(hoopCount(3));
+
+
+ //next
+
+ function opposite(number) {
+    //your code here
+  }
+
+console.log(opposite(1));
