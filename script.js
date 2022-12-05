@@ -689,3 +689,12 @@ function removeExclamationMarks(s) {
 
 
 console.log(removeExclamationMarks("xIctVKMGIA!IWTfzYBsvx RtdyThYWSd!VKfTjVigrK"));
+
+
+//next
+function litres(time) {
+    return 0;
+  }
+
+
+console.log(litres(2));
