@@ -653,3 +653,15 @@ console.log(countSheeps([true,  true,  true,  false,
     true,  false, false, true ,
     true,  true,  true,  true ,
     false, false, true,  true ]));
+
+
+
+     //next
+
+
+     function between(a, b) {
+        // your code here
+      }
+      
+      
+      console.log(between(1, 4));
