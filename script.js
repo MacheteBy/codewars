@@ -642,7 +642,14 @@ console.log(opposite(1));
  //next
 
 function countSheeps(arrayOfSheep) {
-    // TODO May the force be with you
+    return arrayOfSheep.filter(function(elem) {
+        return elem == true;
+    }).length;
   }
 
-console.log(countSheeps());
+console.log(countSheeps([true,  true,  true,  false,
+    true,  true,  true,  true ,
+    true,  false, true,  false,
+    true,  false, false, true ,
+    true,  true,  true,  true ,
+    false, false, true,  true ]));
