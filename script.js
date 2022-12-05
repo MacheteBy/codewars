@@ -734,5 +734,10 @@ var uniqueInOrder = function (iterable) {
     return res;
 };
 
+//v2
+var uniqueInOrder=function(iterable){
+    return [...iterable].filter((a, i) => a !== iterable[i-1]);
+};
+
 
 console.log(uniqueInOrder('AAAABBBCCDAABBB'));
