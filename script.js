@@ -586,8 +586,15 @@ console.log(correct("L0ND0N"));
 //next
 
 function switchItUp(number){
-    //Write your own Code!
+    switch(number){
+        case 1: "One";
+        break;
+        case 2: "Two";
+        break;
+        case 3: "Three";
+        break;
+    }
     }
 
 
-console.log(switchItUp);
+console.log(switchItUp(1));
