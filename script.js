@@ -705,15 +705,15 @@ console.log(litres(1.4));
 var humanYearsCatYearsDogYears = function (humanYears) {
     let catYears = 0;
     let dogYears = 0;
-    if(humanYears == 1){
+    if (humanYears == 1) {
         catYears = 15;
         dogYears = 15;
-    }else if(humanYears == 2){
-        catYears = 15+9;
-        dogYears = 15+9;
-    }else if(humanYears >= 3){
-        catYears = 24+((humanYears-2) * 5);
-        dogYears = 24+((humanYears-2) * 4);
+    } else if (humanYears == 2) {
+        catYears = 15 + 9;
+        dogYears = 15 + 9;
+    } else if (humanYears >= 3) {
+        catYears = 24 + ((humanYears - 2) * 5);
+        dogYears = 24 + ((humanYears - 2) * 4);
     }
     return [humanYears, dogYears, catYears];
 };
@@ -721,3 +721,12 @@ var humanYearsCatYearsDogYears = function (humanYears) {
 
 
 console.log(humanYearsCatYearsDogYears(10));
+
+
+//next
+var uniqueInOrder = function (iterable) {
+    //your code here - remember iterable can be a string or an array
+};
+
+
+console.log(uniqueInOrder('AAAABBBCCDAABBB'));
