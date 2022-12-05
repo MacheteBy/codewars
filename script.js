@@ -586,15 +586,31 @@ console.log(correct("L0ND0N"));
 //next
 
 function switchItUp(number){
+    let res = "";
     switch(number){
-        case 1: "One";
+        case 0: res = "Zero";
         break;
-        case 2: "Two";
+        case 1: res = "One";
         break;
-        case 3: "Three";
+        case 2: res = "Two";
+        break;
+        case 3: res = "Three";
+        break;
+        case 4: res = "Four";
+        break;
+        case 5: res = "Five";
+        break;
+        case 6: res = "Six"; 
+        break;
+        case 7: res = "Seven";
+        break;
+        case 8: res = "Eight";
+        break;
+        case 9: res = "Nine";
         break;
     }
+    return res;
     }
 
 
-console.log(switchItUp(1));
+console.log(switchItUp(5));
