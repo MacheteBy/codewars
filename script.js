@@ -635,3 +635,14 @@ function hoopCount (n) {
   }
 
 console.log(opposite(1));
+
+
+
+
+ //next
+
+function countSheeps(arrayOfSheep) {
+    // TODO May the force be with you
+  }
+
+console.log(countSheeps());
