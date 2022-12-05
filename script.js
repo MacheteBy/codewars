@@ -631,7 +631,7 @@ function hoopCount (n) {
  //next
 
  function opposite(number) {
-    //your code here
+    return -number;
   }
 
 console.log(opposite(1));
