@@ -576,8 +576,7 @@ console.log(findOdd([20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5]));
 
 //next
 
-function correct(string)
-{
+function correct(string) {
     return string.replace(/0/g, "O").replace(/1/g, "I").replace(/5/g, "S");
 }
 
@@ -585,83 +584,98 @@ console.log(correct("L0ND0N"));
 
 //next
 
-function switchItUp(number){
+function switchItUp(number) {
     let res = "";
-    switch(number){
-        case 0: res = "Zero";
-        break;
-        case 1: res = "One";
-        break;
-        case 2: res = "Two";
-        break;
-        case 3: res = "Three";
-        break;
-        case 4: res = "Four";
-        break;
-        case 5: res = "Five";
-        break;
-        case 6: res = "Six"; 
-        break;
-        case 7: res = "Seven";
-        break;
-        case 8: res = "Eight";
-        break;
-        case 9: res = "Nine";
-        break;
+    switch (number) {
+        case 0:
+            res = "Zero";
+            break;
+        case 1:
+            res = "One";
+            break;
+        case 2:
+            res = "Two";
+            break;
+        case 3:
+            res = "Three";
+            break;
+        case 4:
+            res = "Four";
+            break;
+        case 5:
+            res = "Five";
+            break;
+        case 6:
+            res = "Six";
+            break;
+        case 7:
+            res = "Seven";
+            break;
+        case 8:
+            res = "Eight";
+            break;
+        case 9:
+            res = "Nine";
+            break;
     }
     return res;
-    }
+}
 
 console.log(switchItUp(5));
 
 
 //next
 
-function hoopCount (n) {
-    if(n >= 10){
+function hoopCount(n) {
+    if (n >= 10) {
         return "Great, now move on to tricks";
-    }else{
+    } else {
         return "Keep at it until you get it";
     }
- }
+}
 
- console.log(hoopCount(3));
+console.log(hoopCount(3));
 
 
- //next
+//next
 
- function opposite(number) {
+function opposite(number) {
     return -number;
-  }
+}
 
 console.log(opposite(1));
 
 
 
 
- //next
+//next
 
 function countSheeps(arrayOfSheep) {
-    return arrayOfSheep.filter(function(elem) {
+    return arrayOfSheep.filter(function (elem) {
         return elem == true;
     }).length;
-  }
+}
 
-console.log(countSheeps([true,  true,  true,  false,
-    true,  true,  true,  true ,
-    true,  false, true,  false,
-    true,  false, false, true ,
-    true,  true,  true,  true ,
-    false, false, true,  true ]));
-
-
-
-     //next
+console.log(countSheeps([true, true, true, false,
+    true, true, true, true,
+    true, false, true, false,
+    true, false, false, true,
+    true, true, true, true,
+    false, false, true, true
+]));
 
 
-     function between(a, b) {
-        // your code here
-      }
-      
-      
-      console.log(between(1, 4));
+
+//next
+
+
+function between(a, b) {
+    let arr = [];
+    for (let i = a; i <= b; i++) {
+        arr.push(i);
+    }
+    return arr;
+}
+
+
+console.log(between(1, 4));
