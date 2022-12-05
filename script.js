@@ -679,3 +679,17 @@ function between(a, b) {
 
 
 console.log(between(1, 4));
+
+
+//next
+
+function removeExclamationMarks(s) {
+    return s.replace("!", "");
+  }
+
+
+console.log(removeExclamationMarks("xIctVKMGIA!IWTfzYBsvx RtdyThYWSd!VKfTjVigrK"));
+
+"xIctVKMGIA!IWTfzYBsvx RtdyThYWSd!VKfTjVigrK"
+'xIctVKMGIAIWTfzYBsvx RtdyThYWSd!VKfTjVigrK'
+'xIctVKMGIAIWTfzYBsvx RtdyThYWSdVKfTjVigrK'
