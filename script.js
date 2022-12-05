@@ -614,3 +614,7 @@ function switchItUp(number){
 
 
 console.log(switchItUp(5));
+
+function hoopCount (n) {
+    //your code goes here    
+ }
