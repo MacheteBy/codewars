@@ -726,17 +726,17 @@ console.log(humanYearsCatYearsDogYears(10));
 //next
 var uniqueInOrder = function (iterable) {
     let res = [];
-    for(let i = 0; i < iterable.length; i++){
-            if(iterable[i] !== iterable[i+1]){
-                res.push(iterable[i]);
-            }
+    for (let i = 0; i < iterable.length; i++) {
+        if (iterable[i] !== iterable[i + 1]) {
+            res.push(iterable[i]);
+        }
     }
     return res;
 };
 
 //v2
-var uniqueInOrder=function(iterable){
-    return [...iterable].filter((a, i) => a !== iterable[i-1]);
+var uniqueInOrder = function (iterable) {
+    return [...iterable].filter((a, i) => a !== iterable[i - 1]);
 };
 
 
@@ -746,14 +746,12 @@ console.log(uniqueInOrder('AAAABBBCCDAABBB'));
 
 
 //next
-function removeEveryOther(arr){
-    for(let i = 0; i < arr.length; i++){
-        if(i % 2 == 1){
-            arr.splice(i, 1);
-        }
-    }
-    return arr;
-  }
+function removeEveryOther(arr) {
+    return arr.filter((a, b) => (b%2));
+}
 
 
-  console.log(removeEveryOther(['Hello', 'Goodbye', 'Hello Again']));
+console.log(removeEveryOther([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+
+
+console.log(3 / 2);
