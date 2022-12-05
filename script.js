@@ -747,7 +747,9 @@ console.log(uniqueInOrder('AAAABBBCCDAABBB'));
 
 //next
 function removeEveryOther(arr){
-    //your code here
+    for(let i = 0; i < arr.length; i++){
+        
+    }
   }
 
 
