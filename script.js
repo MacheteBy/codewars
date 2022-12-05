@@ -685,7 +685,7 @@ console.log(between(1, 4));
 
 function removeExclamationMarks(s) {
     return s.replace(/[!]/gi, '');
-  }
+}
 
 
 console.log(removeExclamationMarks("xIctVKMGIA!IWTfzYBsvx RtdyThYWSd!VKfTjVigrK"));
@@ -694,7 +694,19 @@ console.log(removeExclamationMarks("xIctVKMGIA!IWTfzYBsvx RtdyThYWSd!VKfTjVigrK"
 //next
 function litres(time) {
     return Math.floor(time * 0.5);
-  }
+}
 
 
 console.log(litres(1.4));
+
+
+//next
+
+var humanYearsCatYearsDogYears = function (humanYears) {
+    // Your code here!
+    return [0, 0, 0];
+};
+
+
+
+console.log(humanYearsCatYearsDogYears(1));
