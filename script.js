@@ -585,3 +585,9 @@ console.log(correct("L0ND0N"));
 
 //next
 
+function switchItUp(number){
+    //Write your own Code!
+    }
+
+
+console.log(switchItUp);
