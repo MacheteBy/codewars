@@ -741,3 +741,14 @@ var uniqueInOrder=function(iterable){
 
 
 console.log(uniqueInOrder('AAAABBBCCDAABBB'));
+
+
+
+
+//next
+function removeEveryOther(arr){
+    //your code here
+  }
+
+
+  console.log(removeEveryOther(['Hello', 'Goodbye', 'Hello Again']));
