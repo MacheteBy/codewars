@@ -684,12 +684,8 @@ console.log(between(1, 4));
 //next
 
 function removeExclamationMarks(s) {
-    return s.replace("!", "");
+    return s.replace(/[!]/gi, '');
   }
 
 
 console.log(removeExclamationMarks("xIctVKMGIA!IWTfzYBsvx RtdyThYWSd!VKfTjVigrK"));
-
-"xIctVKMGIA!IWTfzYBsvx RtdyThYWSd!VKfTjVigrK"
-'xIctVKMGIAIWTfzYBsvx RtdyThYWSd!VKfTjVigrK'
-'xIctVKMGIAIWTfzYBsvx RtdyThYWSdVKfTjVigrK'
