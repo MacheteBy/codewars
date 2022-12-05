@@ -748,8 +748,11 @@ console.log(uniqueInOrder('AAAABBBCCDAABBB'));
 //next
 function removeEveryOther(arr){
     for(let i = 0; i < arr.length; i++){
-        
+        if(i % 2 == 1){
+            arr.splice(i, 1);
+        }
     }
+    return arr;
   }
 
 
