@@ -894,3 +894,5 @@ console.log(removeChar('eloquent'));
 function invert(array) {
     return ;
  }
+
+ console.log(invert([1,2,3,4,5]));
