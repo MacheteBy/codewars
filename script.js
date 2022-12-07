@@ -865,7 +865,7 @@ console.log(countBy(2, 5));
 //next
 const sequenceSum = (begin, end, step) => {
     let count = 0;
-    for(let i = begin; i <= end; i+=step){
+    for (let i = begin; i <= end; i += step) {
         count += i;
     }
     return count;
@@ -875,7 +875,7 @@ console.log(sequenceSum(2, 6, 2));
 
 //next
 
-function square(num){
+function square(num) {
     return Math.pow(num, 2);
 }
 
@@ -883,8 +883,8 @@ console.log(square(3));
 
 
 //next
-function removeChar(str){
-   return;
-   };
+function removeChar(str) {
+    return str.slice(1, -1);
+};
 
-   console.log(removeChar('eloquent'));
+console.log(removeChar('eloquent'));
