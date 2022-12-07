@@ -811,18 +811,17 @@ console.log(persistence(39));
 //next
 
 function getGrade (s1, s2, s3) {
-    let score = Math.trunc((s1 + s2 + s3) / 3);
-    console.log(score);
-    if(90 <= score <= 100){
+    let score = (s1 + s2 + s3) / 3;
+    if (score >= 90 && score <= 100) {
         return 'A';
-    }else if(80 <= score < 90){
-        return 'B';
-    }else if(70 <= score < 80){
-        return 'C';
-    }else if(60 <= score < 70){
-        return 'D';
-    }else if(0 <= score < 60){
-        return 'F';
+    } else if (score >= 80 ) {
+      return 'B';
+    } else if (score >= 70 ) {
+      return 'C';
+    } else if (score >= 60) {
+      return 'D';
+    } else{
+      return 'F';
     }
   }
 
