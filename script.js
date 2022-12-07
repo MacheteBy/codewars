@@ -833,3 +833,11 @@ function getGrade (s1, s2, s3) {
 }
 
 console.log(squareSum([3, 4, 5]));
+
+
+//next
+function solution(str){
+  
+}
+
+console.log('world');
