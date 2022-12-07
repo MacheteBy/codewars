@@ -826,3 +826,10 @@ function getGrade (s1, s2, s3) {
   }
 
   console.log(getGrade(84,79,85));
+
+//next
+  function squareSum(numbers){
+    return numbers.reduce((a, b) => a + b*b , 0);
+}
+
+console.log(squareSum([3, 4, 5]));
