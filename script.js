@@ -895,3 +895,9 @@ function invert(array) {
     return array.map(item => -item); 
 }
 console.log(invert([1, 2, 3, 4, 5]));
+
+//next
+
+function digitize(n) {
+    //code here
+  }
