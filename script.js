@@ -885,8 +885,12 @@ console.log(square(3));
 //next
 function removeChar(str) {
     return str.slice(1, -1);
-};
+}
 
 console.log(removeChar('eloquent'));
 
 //next
+
+function invert(array) {
+    return ;
+ }
