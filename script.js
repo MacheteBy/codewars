@@ -849,3 +849,13 @@ function boolToWord(bool) {
 }
 
 console.log(boolToWord(true));
+
+
+//next
+function countBy(x, n) {
+    let z = [];
+  
+    return z;
+  }
+
+  console.log(countBy(2,5));
