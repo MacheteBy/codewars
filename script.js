@@ -762,3 +762,10 @@ function grow(x){
 }
 
 console.log(grow([1, 2, 3]));
+
+//next
+function finalGrade (exam, projects) {
+    return // final grade
+  }
+
+  console.log(finalGrade(100, 12));
