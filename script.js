@@ -918,7 +918,11 @@ console.log(roundToNext5(16));
 
 //next
 function expandedForm(num) {
-    // Your code here
-  }
+    let arr = num.toString().split('');
+    for(let i = 0; i < arr.length; i++){
+        arr[i] = arr[i]+arr.length*100;
+    }
+    return arr;
+}
 
-  console.log(expandedForm(12));
+console.log(expandedForm(123));
