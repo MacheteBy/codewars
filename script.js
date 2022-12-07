@@ -837,7 +837,7 @@ console.log(squareSum([3, 4, 5]));
 
 //next
 function solution(str){
-  
+  return str.split("").reverse().join("");
 }
 
-console.log('world');
+console.log(solution('world'));
