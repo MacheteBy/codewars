@@ -892,6 +892,6 @@ console.log(removeChar('eloquent'));
 //next
 
 function invert(array) {
-    return array.map(item => item * -1); 
+    return array.map(item => -item); 
 }
 console.log(invert([1, 2, 3, 4, 5]));
