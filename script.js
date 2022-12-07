@@ -880,3 +880,11 @@ function square(num){
 }
 
 console.log(square(3));
+
+
+//next
+function removeChar(str){
+   return;
+   };
+
+   console.log(removeChar('eloquent'));
