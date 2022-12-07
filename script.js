@@ -892,7 +892,7 @@ console.log(removeChar('eloquent'));
 //next
 
 function invert(array) {
-    return array.map(item => -item); 
+    return array.map(item => -item);
 }
 console.log(invert([1, 2, 3, 4, 5]));
 
@@ -900,10 +900,13 @@ console.log(invert([1, 2, 3, 4, 5]));
 
 function digitize(n) {
     let res = n.toString().split('').reverse();
-    for(let i = 0; i < res.length; i++){
+    for (let i = 0; i < res.length; i++) {
         res[i] = Number(res[i]);
     }
     return res;
-  }
+}
 
 console.log(digitize(35231));
+
+
+//next
