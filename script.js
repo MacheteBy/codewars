@@ -798,7 +798,12 @@ console.log(10 % 9);
 //next
 
 function persistence(num) {
-    let str = "";
+    let str = num.toString();
+    if(str.length == 1){
+        return 0;
+    }
+    let next = str.split('').reduce((a, b) => a * b, 1);
+    return persistence(next) + 1;
 }
 
 console.log(persistence(39));
