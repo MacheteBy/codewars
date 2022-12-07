@@ -799,7 +799,7 @@ console.log(10 % 9);
 
 function persistence(num) {
     let str = num.toString();
-    if(str.length == 1){
+    if (str.length == 1) {
         return 0;
     }
     let next = str.split('').reduce((a, b) => a * b, 1);
@@ -810,34 +810,42 @@ console.log(persistence(39));
 
 //next
 
-function getGrade (s1, s2, s3) {
+function getGrade(s1, s2, s3) {
     let score = (s1 + s2 + s3) / 3;
     if (score >= 90 && score <= 100) {
         return 'A';
-    } else if (score >= 80 ) {
-      return 'B';
-    } else if (score >= 70 ) {
-      return 'C';
+    } else if (score >= 80) {
+        return 'B';
+    } else if (score >= 70) {
+        return 'C';
     } else if (score >= 60) {
-      return 'D';
-    } else{
-      return 'F';
+        return 'D';
+    } else {
+        return 'F';
     }
-  }
+}
 
-  console.log(getGrade(84,79,85));
+console.log(getGrade(84, 79, 85));
 
 //next
-  function squareSum(numbers){
-    return numbers.reduce((a, b) => a + b*b , 0);
+function squareSum(numbers) {
+    return numbers.reduce((a, b) => a + b * b, 0);
 }
 
 console.log(squareSum([3, 4, 5]));
 
 
 //next
-function solution(str){
-  return str.split("").reverse().join("");
+function solution(str) {
+    return str.split("").reverse().join("");
 }
 
 console.log(solution('world'));
+
+
+//next
+function boolToWord(bool) {
+    return bool == true ? 'Yes' :  'No';
+}
+
+console.log(boolToWord(true));
