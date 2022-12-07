@@ -864,7 +864,11 @@ console.log(countBy(2, 5));
 
 //next
 const sequenceSum = (begin, end, step) => {
-    // May the Force be with you
+    let arr = [begin];
+    for(let i = 0; i < end; i+=step){
+        arr.push(1 + step);
+    }
+    return arr;
 };
 
 console.log(sequenceSum(2, 6, 2));
