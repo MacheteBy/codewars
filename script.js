@@ -854,10 +854,17 @@ console.log(boolToWord(true));
 //next
 function countBy(x, n) {
     let z = [x];
-    for(let i = 0; i < n-1; i++){
-        z.push(z[i]+x);
+    for (let i = 0; i < n - 1; i++) {
+        z.push(z[i] + x);
     }
     return z;
 }
 
 console.log(countBy(2, 5));
+
+//next
+const sequenceSum = (begin, end, step) => {
+    // May the Force be with you
+};
+
+console.log(sequenceSum(2, 6, 2));
