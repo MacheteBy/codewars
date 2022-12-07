@@ -845,7 +845,7 @@ console.log(solution('world'));
 
 //next
 function boolToWord(bool) {
-    return bool == true ? 'Yes' :  'No';
+    return bool == true ? 'Yes' : 'No';
 }
 
 console.log(boolToWord(true));
@@ -853,9 +853,11 @@ console.log(boolToWord(true));
 
 //next
 function countBy(x, n) {
-    let z = [];
-  
+    let z = [x];
+    for(let i = 0; i < n-1; i++){
+        z.push(z[i]+x);
+    }
     return z;
-  }
+}
 
-  console.log(countBy(2,5));
+console.log(countBy(2, 5));
