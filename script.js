@@ -918,11 +918,7 @@ console.log(roundToNext5(16));
 
 //next
 function expandedForm(num) {
-    let arr = num.toString().split('');
-    for(let i = 0; i < arr.length; i++){
-        arr[i] = arr[i]+arr.length*100;
-    }
-    return arr;
+return num.toString().split("").reverse().map((a, b) => a * Math.pow(10, b)).reverse().filter(a => a > 0).join(' + ');
 }
 
-console.log(expandedForm(123));
+console.log(expandedForm(70304));
