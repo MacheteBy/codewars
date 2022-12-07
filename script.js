@@ -757,22 +757,31 @@ console.log(removeEveryOther([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
 
 //next
 
-function grow(x){
-    return x.reduce((a,b) => a * b);
+function grow(x) {
+    return x.reduce((a, b) => a * b);
 }
 
 console.log(grow([1, 2, 3]));
 
 //next
-function finalGrade (exam, projects) {
+function finalGrade(exam, projects) {
     if (exam > 90 || projects > 10) {
         return 100;
-      } else if (exam > 75 && projects >= 5) {
+    } else if (exam > 75 && projects >= 5) {
         return 90;
-      } else if (exam > 50 && projects >= 2) {
+    } else if (exam > 50 && projects >= 2) {
         return 75;
-      }
-      return 0;
     }
+    return 0;
+}
 
-  console.log(finalGrade(0, 3));
+console.log(finalGrade(0, 3));
+
+
+//next
+
+function getDivisorsCnt(n){
+    // todo
+}
+
+console.log(getDivisorsCnt(10));
