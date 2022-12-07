@@ -888,3 +888,5 @@ function removeChar(str) {
 };
 
 console.log(removeChar('eloquent'));
+
+//next
