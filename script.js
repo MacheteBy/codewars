@@ -899,5 +899,11 @@ console.log(invert([1, 2, 3, 4, 5]));
 //next
 
 function digitize(n) {
-    //code here
+    let res = n.toString().split('').reverse();
+    for(let i = 0; i < res.length; i++){
+        res[i] = Number(res[i]);
+    }
+    return res;
   }
+
+console.log(digitize(35231));
