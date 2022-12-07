@@ -864,11 +864,19 @@ console.log(countBy(2, 5));
 
 //next
 const sequenceSum = (begin, end, step) => {
-    let arr = [begin];
-    for(let i = 0; i < end; i+=step){
-        arr.push(1 + step);
+    let count = 0;
+    for(let i = begin; i <= end; i+=step){
+        count += i;
     }
-    return arr;
+    return count;
 };
 
 console.log(sequenceSum(2, 6, 2));
+
+//next
+
+function square(num){
+    return Math.pow(num, 2);
+}
+
+console.log(square(3));
