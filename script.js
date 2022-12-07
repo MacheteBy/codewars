@@ -915,3 +915,10 @@ function roundToNext5(n) {
 }
 
 console.log(roundToNext5(16));
+
+//next
+function expandedForm(num) {
+    // Your code here
+  }
+
+  console.log(expandedForm(12));
