@@ -934,7 +934,11 @@ console.log(feast("brown bear", "bear claw"));
 
 //next
 var countSheep = function (num){
-  
-}
+  let strRes = "";
+  for(let i = 1; i <= num; i++){
+    strRes += `${i} sheep...`;
+  }
+  return strRes;
+};
 
 console.log(countSheep(3));
