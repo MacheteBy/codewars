@@ -1013,13 +1013,13 @@ console.log(seven(times(five())));
 
 //next
 function lovefunc(flower1, flower2) {
-    let Timmy = flower1%2;
-    let Sarah = flower2%2;
-    if((flower1%2 == 0 && flower2%2 == 1) || flower1%2 == 1 && flower2%2 == 0){
+    let Timmy = flower1 % 2;
+    let Sarah = flower2 % 2;
+    if ((flower1 % 2 == 0 && flower2 % 2 == 1) || flower1 % 2 == 1 && flower2 % 2 == 0) {
         return true;
-    }else{
+    } else {
         return false;
     }
 }
 
-console.log(lovefunc(2,1));
+console.log(lovefunc(2, 1));
