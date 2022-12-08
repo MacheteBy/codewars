@@ -1142,3 +1142,13 @@ function sortByLength (array) {
 }
 
 console.log(sortByLength(["Beg", "Life", "I", "To"]));
+
+
+//next
+function abbrevName(name){
+
+    // code away
+
+}
+
+console.log(abbrevName("Sam Harris"));
