@@ -1155,7 +1155,7 @@ console.log(abbrevName("sam harris"));
 
 //next
 function noSpace(x){
-
+    return x.replace(/([ ])/g, "");
 }
 
-console.log(noSpace());
+console.log(noSpace('8 j 8   mBliB8g  imjB8B8  jl  B'));
