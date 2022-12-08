@@ -1106,3 +1106,16 @@ var max = function(list){
 }
 
 console.log(Number([-52, 56, 30, 29, -54, 0, -110].sort().slice(-1)));
+
+
+//next
+function repeatStr (n, s) {
+    let str = "";
+    for(let i = 0; i < n; i++){
+        str += s;
+    }
+    return str;
+  }
+
+
+  console.log(repeatStr(5, "#"));
