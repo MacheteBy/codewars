@@ -930,3 +930,11 @@ function feast(beast, dish) {
 }
 
 console.log(feast("brown bear", "bear claw"));
+
+
+//next
+var countSheep = function (num){
+  
+}
+
+console.log(countSheep(3));
