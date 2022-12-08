@@ -1097,10 +1097,12 @@ console.log(getRealFloor(-3));
 //next
 var min = function(list){
     
-    return list[0];
+    return Math.min(...list);
 }
 
 var max = function(list){
     
-    return list[0];
+    return Math.max(...list);
 }
+
+console.log(Number([-52, 56, 30, 29, -54, 0, -110].sort().slice(-1)));
