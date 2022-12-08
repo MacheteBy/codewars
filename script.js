@@ -1074,7 +1074,7 @@ console.log(makeNegative(-9));
 
 //next
 function sayHello(name) {
-    return 'Hello'
-  }
+    return `Hello, ${name}`;
+}
 
-  console.log(sayHello('Mr. Spock'));
+console.log(sayHello('Mr. Spock'));
