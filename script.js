@@ -1033,40 +1033,40 @@ console.log(move(3, 6));
 
 
 //next
-function getMiddle(s){
-    if(s.length%2 == 0){
-         return s.slice(Math.floor(s.length/2 - 1), Math.floor(s.length/2 + 1));
-    }else{
-        return s.slice(Math.floor(s.length/2), Math.floor(s.length/2+1));
+function getMiddle(s) {
+    if (s.length % 2 == 0) {
+        return s.slice(Math.floor(s.length / 2 - 1), Math.floor(s.length / 2 + 1));
+    } else {
+        return s.slice(Math.floor(s.length / 2), Math.floor(s.length / 2 + 1));
     }
 }
 
 console.log(getMiddle("middle"));
 
-console.log(Math.floor(4/2));
+console.log(Math.floor(4 / 2));
 
 
 //next
 function points(games) {
     let totalPoint = 0;
-    for(let i = 0; i < games.length; i++){
-        if(games[i][0] > games[i][2]){
+    for (let i = 0; i < games.length; i++) {
+        if (games[i][0] > games[i][2]) {
             totalPoint += 3;
-        }else if(games[i][0] < games[i][2]){
+        } else if (games[i][0] < games[i][2]) {
             totalPoint += 0;
-        }else if(games[i][0] == games[i][2]){
+        } else if (games[i][0] == games[i][2]) {
             totalPoint += 1;
         }
     }
     return totalPoint;
 }
 
-console.log(points(["1:0","2:0","3:0","4:0","2:1","3:1","4:1","3:2","4:2","4:3"]));
+console.log(points(["1:0", "2:0", "3:0", "4:0", "2:1", "3:1", "4:1", "3:2", "4:2", "4:3"]));
 
 
 //next
 function makeNegative(num) {
-    return -num;
-  }
+    return num > 0 ? -num : num;
+}
 
-console.log(makeNegative(42));
+console.log(makeNegative(-9));
