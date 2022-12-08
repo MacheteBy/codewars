@@ -1034,7 +1034,13 @@ console.log(move(3, 6));
 
 //next
 function getMiddle(s){
-  //Code goes here!
+    if(s.length%2 == 0){
+         return s.slice(Math.floor(s.length/2 - 1), Math.floor(s.length/2 + 1));
+    }else{
+        return s.slice(Math.floor(s.length/2), Math.floor(s.length/2+1));
+    }
 }
 
-console.log(getMiddle("test"));
+console.log(getMiddle("middle"));
+
+console.log(Math.floor(4/2));
