@@ -1119,3 +1119,18 @@ function repeatStr (n, s) {
 
 
   console.log(repeatStr(5, "#"));
+
+  //next
+  function bmi(weight, height) {
+    if(weight / (height*height) <= 18.5){
+        return "Underweight";
+    }else if(weight / (height*height) <= 25){
+        return "Normal";
+    }else if(weight / (height*height) <= 30){
+        return "Overweight";
+    }else if(weight / (height*height) > 30){
+        return "Obese";
+    }
+  }
+
+  console.log(bmi(80, 1.80));
