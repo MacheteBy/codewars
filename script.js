@@ -1070,3 +1070,11 @@ function makeNegative(num) {
 }
 
 console.log(makeNegative(-9));
+
+
+//next
+function sayHello(name) {
+    return 'Hello'
+  }
+
+  console.log(sayHello('Mr. Spock'));
