@@ -926,7 +926,7 @@ console.log(expandedForm(70304));
 
 //next
 function feast(beast, dish) {
-    return;
+    return beast.slice(0,1) == dish.slice(0,1) && beast.slice(-1) == dish.slice(-1) ? true : false;
 }
 
-console.log(feast("great blue heron", "garlic naan"));
+console.log(feast("brown bear", "bear claw"));
