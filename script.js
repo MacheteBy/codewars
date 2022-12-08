@@ -1030,3 +1030,11 @@ function move(position, roll) {
 }
 
 console.log(move(3, 6));
+
+
+//next
+function getMiddle(s){
+  //Code goes here!
+}
+
+console.log(getMiddle("test"));
