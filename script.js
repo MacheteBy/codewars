@@ -1093,3 +1093,14 @@ function getRealFloor(n) {
 }
 
 console.log(getRealFloor(-3));
+
+//next
+var min = function(list){
+    
+    return list[0];
+}
+
+var max = function(list){
+    
+    return list[0];
+}
