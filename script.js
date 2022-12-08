@@ -1048,7 +1048,17 @@ console.log(Math.floor(4/2));
 
 //next
 function points(games) {
-    return games.length;
+    let totalPoint = 0;
+    for(let i = 0; i < games.length; i++){
+        if(games[i][0] > games[i][2]){
+            totalPoint += 3;
+        }else if(games[i][0] < games[i][2]){
+            totalPoint += 0;
+        }else if(games[i][0] == games[i][2]){
+            totalPoint += 1;
+        }
+    }
+    return totalPoint;
 }
 
 console.log(points(["1:0","2:0","3:0","4:0","2:1","3:1","4:1","3:2","4:2","4:3"]));
