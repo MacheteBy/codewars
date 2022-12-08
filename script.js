@@ -1086,3 +1086,10 @@ function isUpperCase(str) {
 }
 
 console.log(isUpperCase("hello I AM DONALD"));
+
+//next
+function getRealFloor(n) {
+
+}
+
+console.log(getRealFloor(5));
