@@ -1082,7 +1082,7 @@ console.log(sayHello('Mr. Spock'));
 
 //next
 function isUpperCase(str) {
-
+    return str === str.toUpperCase() ? true : false;
 }
 
 console.log(isUpperCase("hello I AM DONALD"));
