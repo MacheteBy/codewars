@@ -961,3 +961,11 @@ function times( b )     { return function( a ) { return a * b; }; }
 function dividedBy( b ) { return function( a ) { return Math.floor(a / b); }; }
 
 console.log(seven(times(five())));
+
+
+//next
+function lovefunc(flower1, flower2){
+    // moment of truth
+  }
+
+  console.log(lovefunc(2,2));
