@@ -926,46 +926,100 @@ console.log(expandedForm(70304));
 
 //next
 function feast(beast, dish) {
-    return beast.slice(0,1) == dish.slice(0,1) && beast.slice(-1) == dish.slice(-1) ? true : false;
+    return beast.slice(0, 1) == dish.slice(0, 1) && beast.slice(-1) == dish.slice(-1) ? true : false;
 }
 
 console.log(feast("brown bear", "bear claw"));
 
 
 //next
-var countSheep = function (num){
-  let strRes = "";
-  for(let i = 1; i <= num; i++){
-    strRes += `${i} sheep...`;
-  }
-  return strRes;
+var countSheep = function (num) {
+    let strRes = "";
+    for (let i = 1; i <= num; i++) {
+        strRes += `${i} sheep...`;
+    }
+    return strRes;
 };
 
 console.log(countSheep(3));
 
 //next
-function zero(func)   { return func ? func(0) : 0; }
-function one(func)    { return func ? func(1) : 1; }
-function two(func)    { return func ? func(2) : 2; }
-function three(func)  { return func ? func(3) : 3; }
-function four(func)   { return func ? func(4) : 4; }
-function five(func)   { return func ? func(5) : 5; }
-function six(func)    { return func ? func(6) : 6; }
-function seven(func)  { return func ? func(7) : 7; }
-function eight(func)  { return func ? func(8) : 8; }
-function nine(func)   { return func ? func(9) : 9; }
+function zero(func) {
+    return func ? func(0) : 0;
+}
 
-function plus( b )      { return function( a ) { return a + b; }; }
-function minus( b )     { return function( a ) { return a - b; }; }
-function times( b )     { return function( a ) { return a * b; }; }
-function dividedBy( b ) { return function( a ) { return Math.floor(a / b); }; }
+function one(func) {
+    return func ? func(1) : 1;
+}
+
+function two(func) {
+    return func ? func(2) : 2;
+}
+
+function three(func) {
+    return func ? func(3) : 3;
+}
+
+function four(func) {
+    return func ? func(4) : 4;
+}
+
+function five(func) {
+    return func ? func(5) : 5;
+}
+
+function six(func) {
+    return func ? func(6) : 6;
+}
+
+function seven(func) {
+    return func ? func(7) : 7;
+}
+
+function eight(func) {
+    return func ? func(8) : 8;
+}
+
+function nine(func) {
+    return func ? func(9) : 9;
+}
+
+function plus(b) {
+    return function (a) {
+        return a + b;
+    };
+}
+
+function minus(b) {
+    return function (a) {
+        return a - b;
+    };
+}
+
+function times(b) {
+    return function (a) {
+        return a * b;
+    };
+}
+
+function dividedBy(b) {
+    return function (a) {
+        return Math.floor(a / b);
+    };
+}
 
 console.log(seven(times(five())));
 
 
 //next
-function lovefunc(flower1, flower2){
-    // moment of truth
-  }
+function lovefunc(flower1, flower2) {
+    let Timmy = flower1%2;
+    let Sarah = flower2%2;
+    if((flower1%2 == 0 && flower2%2 == 1) || flower1%2 == 1 && flower2%2 == 0){
+        return true;
+    }else{
+        return false;
+    }
+}
 
-  console.log(lovefunc(2,2));
+console.log(lovefunc(2,1));
