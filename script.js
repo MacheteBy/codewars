@@ -918,7 +918,15 @@ console.log(roundToNext5(16));
 
 //next
 function expandedForm(num) {
-return num.toString().split("").reverse().map((a, b) => a * Math.pow(10, b)).reverse().filter(a => a > 0).join(' + ');
+    return num.toString().split("").reverse().map((a, b) => a * Math.pow(10, b)).reverse().filter(a => a > 0).join(' + ');
 }
 
 console.log(expandedForm(70304));
+
+
+//next
+function feast(beast, dish) {
+    return;
+}
+
+console.log(feast("great blue heron", "garlic naan"));
