@@ -1151,3 +1151,11 @@ function abbrevName(name){
 }
 
 console.log(abbrevName("sam harris"));
+
+
+//next
+function noSpace(x){
+
+}
+
+console.log(noSpace());
