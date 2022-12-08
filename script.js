@@ -1095,13 +1095,13 @@ function getRealFloor(n) {
 console.log(getRealFloor(-3));
 
 //next
-var min = function(list){
-    
+var min = function (list) {
+
     return Math.min(...list);
 }
 
-var max = function(list){
-    
+var max = function (list) {
+
     return Math.max(...list);
 }
 
@@ -1109,28 +1109,36 @@ console.log(Number([-52, 56, 30, 29, -54, 0, -110].sort().slice(-1)));
 
 
 //next
-function repeatStr (n, s) {
+function repeatStr(n, s) {
     let str = "";
-    for(let i = 0; i < n; i++){
+    for (let i = 0; i < n; i++) {
         str += s;
     }
     return str;
-  }
+}
 
 
-  console.log(repeatStr(5, "#"));
+console.log(repeatStr(5, "#"));
 
-  //next
-  function bmi(weight, height) {
-    if(weight / (height*height) <= 18.5){
+//next
+function bmi(weight, height) {
+    if (weight / (height * height) <= 18.5) {
         return "Underweight";
-    }else if(weight / (height*height) <= 25){
+    } else if (weight / (height * height) <= 25) {
         return "Normal";
-    }else if(weight / (height*height) <= 30){
+    } else if (weight / (height * height) <= 30) {
         return "Overweight";
-    }else if(weight / (height*height) > 30){
+    } else if (weight / (height * height) > 30) {
         return "Obese";
     }
-  }
+}
 
-  console.log(bmi(80, 1.80));
+console.log(bmi(80, 1.80));
+
+
+//next
+function sortByLength (array) {
+    return array.sort((a,b) => a.length - b.length);
+}
+
+console.log(sortByLength(["Beg", "Life", "I", "To"]));
