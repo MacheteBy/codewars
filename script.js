@@ -1078,3 +1078,11 @@ function sayHello(name) {
 }
 
 console.log(sayHello('Mr. Spock'));
+
+
+//next
+function isUpperCase(str) {
+
+}
+
+console.log(isUpperCase("hello I AM DONALD"));
