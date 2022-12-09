@@ -1176,7 +1176,15 @@ console.log(reverseList([1, 2, 3, 4]));
 
 //next
 function enough(cap, on, wait) {
-    return cap > on + wait ? 0 : (on + wait) - cap; 
+    return cap > on + wait ? 0 : (on + wait) - cap;
 }
 
 console.log(enough(10, 15, 5));
+
+
+//next
+function findDifference(a, b) {
+    //loading...
+}
+
+console.log(findDifference([3, 2, 5], [1, 4, 4]));
