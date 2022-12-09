@@ -1184,7 +1184,7 @@ console.log(enough(10, 15, 5));
 
 //next
 function findDifference(a, b) {
-   return Math.abs(a.reduce((a,b) => a * b) - b.reduce((a,b) => a * b));
+    return Math.abs(a.reduce((a, b) => a * b) - b.reduce((a, b) => a * b));
 }
 
 console.log(findDifference([1, 4, 4], [3, 2, 5]));
@@ -1192,7 +1192,7 @@ console.log(findDifference([1, 4, 4], [3, 2, 5]));
 
 //next
 function testEven(n) {
-    return n%2 == 0 ? true : false;
+    return n % 2 == 0 ? true : false;
 }
 
 console.log(testEven(0));
@@ -1205,9 +1205,9 @@ var copaDelReyGoals = 5;
 var totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals;
 
 //next
-function maps(x){
+function maps(x) {
     let resArr = [];
-    for(let i = 0; i < x.length; i++){
+    for (let i = 0; i < x.length; i++) {
         resArr[i] = x[i] + x[i];
     }
     return resArr;
@@ -1216,9 +1216,9 @@ function maps(x){
 console.log(maps([2, 2, 2, 2, 2, 2]));
 
 //next
-function domainName(url){
-    //your code here
-  }
+function domainName(url) {
+    return url.replace("https://", '').replace("http://", '').replace("www.", '').split('.')[0];
+}
 
 
-  console.log(domainName());
+console.log(domainName("www.xakep.ru"));
