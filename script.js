@@ -1137,15 +1137,15 @@ console.log(bmi(80, 1.80));
 
 
 //next
-function sortByLength (array) {
-    return array.sort((a,b) => a.length - b.length);
+function sortByLength(array) {
+    return array.sort((a, b) => a.length - b.length);
 }
 
 console.log(sortByLength(["Beg", "Life", "I", "To"]));
 
 
 //next
-function abbrevName(name){
+function abbrevName(name) {
     let arr = name.split(' ');
     return `${arr[0][0]}.${arr[1][0]}`.toUpperCase();
 }
@@ -1154,7 +1154,7 @@ console.log(abbrevName("sam harris"));
 
 
 //next
-function noSpace(x){
+function noSpace(x) {
     return x.replace(/([ ])/g, "");
 }
 
@@ -1163,6 +1163,12 @@ console.log(noSpace('8 j 8   mBliB8g  imjB8B8  jl  B'));
 //next
 function unusualFive() {
     return "qwert".length;
-  }
+}
 
 console.log(unusualFive());
+
+//next
+function reverseList(list) {
+    return list.reverse();
+}
+console.log(reverseList([1,2,3,4]));
