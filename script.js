@@ -1172,3 +1172,11 @@ function reverseList(list) {
     return list.reverse();
 }
 console.log(reverseList([1,2,3,4]));
+
+
+//next
+function enough(cap, on, wait) {
+    // your code here
+  }
+
+  console.log(enough(10, 5, 5));
