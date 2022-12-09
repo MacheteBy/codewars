@@ -1192,7 +1192,7 @@ console.log(findDifference([1, 4, 4], [3, 2, 5]));
 
 //next
 function testEven(n) {
-    //Your awesome code here!
+    return n%2 == 0 ? true : false;
 }
 
-console.log(testEven(1));
+console.log(testEven(0));
