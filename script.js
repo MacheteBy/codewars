@@ -1188,3 +1188,11 @@ function findDifference(a, b) {
 }
 
 console.log(findDifference([1, 4, 4], [3, 2, 5]));
+
+
+//next
+function testEven(n) {
+    //Your awesome code here!
+}
+
+console.log(testEven(1));
