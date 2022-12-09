@@ -1184,7 +1184,7 @@ console.log(enough(10, 15, 5));
 
 //next
 function findDifference(a, b) {
-    //loading...
+   return Math.abs(a.reduce((a,b) => a * b) - b.reduce((a,b) => a * b));
 }
 
-console.log(findDifference([3, 2, 5], [1, 4, 4]));
+console.log(findDifference([1, 4, 4], [3, 2, 5]));
