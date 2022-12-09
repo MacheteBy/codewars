@@ -1203,3 +1203,12 @@ var championsLeagueGoals = 10;
 var copaDelReyGoals = 5;
 
 var totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals;
+
+//next
+function maps(x){
+    for(let i = 0; i < x.length; i++){
+        
+    }
+}
+
+console.log(maps([1, 2, 3]));
