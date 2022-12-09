@@ -1171,12 +1171,12 @@ console.log(unusualFive());
 function reverseList(list) {
     return list.reverse();
 }
-console.log(reverseList([1,2,3,4]));
+console.log(reverseList([1, 2, 3, 4]));
 
 
 //next
 function enough(cap, on, wait) {
-    // your code here
-  }
+    return cap > on + wait ? 0 : (on + wait) - cap; 
+}
 
-  console.log(enough(10, 5, 5));
+console.log(enough(10, 15, 5));
