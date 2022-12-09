@@ -1196,3 +1196,10 @@ function testEven(n) {
 }
 
 console.log(testEven(0));
+
+//next
+var laLigaGoals
+var championsLeagueGoals
+var copaDelReyGoals
+
+var totalGoals
