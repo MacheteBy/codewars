@@ -1162,7 +1162,7 @@ console.log(noSpace('8 j 8   mBliB8g  imjB8B8  jl  B'));
 
 //next
 function unusualFive() {
-    return 5;
+    return "qwert".length;
   }
 
 console.log(unusualFive());
