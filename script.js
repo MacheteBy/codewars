@@ -1206,9 +1206,19 @@ var totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals;
 
 //next
 function maps(x){
+    let resArr = [];
     for(let i = 0; i < x.length; i++){
-        
+        resArr[i] = x[i] + x[i];
     }
+    return resArr;
 }
 
-console.log(maps([1, 2, 3]));
+console.log(maps([2, 2, 2, 2, 2, 2]));
+
+//next
+function domainName(url){
+    //your code here
+  }
+
+
+  console.log(domainName());
