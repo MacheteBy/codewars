@@ -1229,16 +1229,16 @@ console.log(domainName("www.xakep.ru"));
 
 class SmallestIntegerFinder {
     findSmallestInt(args) {
-      return Math.min(...args);
+        return Math.min(...args);
     }
-  }
+}
 
-  console.log(findSmallestInt([78,56,232,12,8]));
+console.log(findSmallestInt([78, 56, 232, 12, 8]));
 
 
-  //next
+//next
 
-  function helloWorld(){
+function helloWorld() {
     let str = "Hello World!";
     console.log(str);
-  }
+}
