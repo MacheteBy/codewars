@@ -1222,3 +1222,8 @@ function domainName(url) {
 
 
 console.log(domainName("www.xakep.ru"));
+
+
+
+//next
+
