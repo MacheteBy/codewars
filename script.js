@@ -1244,3 +1244,21 @@ function helloWorld() {
 }
 
 console.log(helloWorld());
+
+
+//next
+function fakeBin(x){
+    let arr = x.split('');
+    let strRes = "";
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] < 5){
+            strRes += 0;
+        }else if(arr[i] >= 5){
+            strRes += 1;
+        }
+    }
+    return strRes;
+}
+
+
+console.log(fakeBin('45385593107843568'));
