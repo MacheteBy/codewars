@@ -1240,20 +1240,20 @@ console.log(findSmallestInt([78, 56, 232, 12, 8]));
 
 function helloWorld() {
     let str = "Hello World!";
-     return console.log(str);
+    return console.log(str);
 }
 
 console.log(helloWorld());
 
 
 //next
-function fakeBin(x){
+function fakeBin(x) {
     let arr = x.split('');
     let strRes = "";
-    for(let i = 0; i < arr.length; i++){
-        if(arr[i] < 5){
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < 5) {
             strRes += 0;
-        }else if(arr[i] >= 5){
+        } else if (arr[i] >= 5) {
             strRes += 1;
         }
     }
@@ -1262,3 +1262,6 @@ function fakeBin(x){
 
 
 console.log(fakeBin('45385593107843568'));
+
+
+//next
