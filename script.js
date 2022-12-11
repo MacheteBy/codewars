@@ -1234,3 +1234,8 @@ class SmallestIntegerFinder {
   }
 
   console.log(findSmallestInt([78,56,232,12,8]));
+
+
+  //next
+
+  
