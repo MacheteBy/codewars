@@ -1240,5 +1240,7 @@ console.log(findSmallestInt([78, 56, 232, 12, 8]));
 
 function helloWorld() {
     let str = "Hello World!";
-    console.log(str);
+     return console.log(str);
 }
+
+console.log(helloWorld());
