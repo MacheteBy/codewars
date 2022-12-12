@@ -1269,7 +1269,9 @@ console.log(fakeBin('45385593107843568'));
 function XO(str) {
     let x = 0;
     let o = 0;
-    
+    for(let i = 0; i < str.length; i++){
+        
+    }
 }
 
 console.log(XO('xo'));
