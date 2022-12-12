@@ -1292,7 +1292,9 @@ console.log(filter_list([1, 2, 'a', 'b']));
 
 //next
 var summation = function (num) {
-    // Code here
+    for(let i = 1; i <= num; i++){
+        
+    }
 }
 
 console.log(summation(8));
