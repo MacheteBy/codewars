@@ -1291,3 +1291,8 @@ function filter_list(l) {
 console.log(filter_list([1, 2, 'a', 'b']));
 
 //next
+var summation = function (num) {
+    // Code here
+}
+
+console.log(summation(8));
