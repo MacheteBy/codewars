@@ -1272,6 +1272,8 @@ function XO(str) {
     for(let i = 0; i < str.length; i++){
         if(str[i] == 'x' || str[i] == 'X'){
             x++;
+        }else if(str[i] == 'o' || str[i] == 'O'){
+            o++;
         }
     }
 }
