@@ -1269,14 +1269,18 @@ console.log(fakeBin('45385593107843568'));
 function XO(str) {
     let x = 0;
     let o = 0;
-    for(let i = 0; i < str.length; i++){
-        if(str[i] == 'x' || str[i] == 'X'){
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] == 'x' || str[i] == 'X') {
             x++;
-        }else if(str[i] == 'o' || str[i] == 'O'){
+        } else if (str[i] == 'o' || str[i] == 'O') {
             o++;
         }
     }
     return x == o ? true : false;
 }
 
-console.log(XO('xo'));
+console.log(XO('xoO'));
+
+
+//next
+
