@@ -1267,7 +1267,9 @@ console.log(fakeBin('45385593107843568'));
 //next
 
 function XO(str) {
-    //code here
+    let x = 0;
+    let o = 0;
+    
 }
 
 console.log(XO('xo'));
