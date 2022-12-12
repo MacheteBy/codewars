@@ -1276,6 +1276,7 @@ function XO(str) {
             o++;
         }
     }
+    return x == o ? true : false;
 }
 
 console.log(XO('xo'));
