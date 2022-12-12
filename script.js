@@ -1284,7 +1284,7 @@ console.log(XO('xoO'));
 
 //next
 function filter_list(l) {
-    return l.map((a) => a == Number);
+    return l.filter(value => typeof(value) == "number");
 }
 
 
