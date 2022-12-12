@@ -1284,8 +1284,10 @@ console.log(XO('xoO'));
 
 //next
 function filter_list(l) {
-    return l.filter(value => typeof(value) == "number");
+    return l.filter(value => typeof (value) == "number");
 }
 
 
-console.log(filter_list([1,2,'a','b']));
+console.log(filter_list([1, 2, 'a', 'b']));
+
+//next
