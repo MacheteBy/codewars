@@ -1294,7 +1294,7 @@ console.log(filter_list([1, 2, 'a', 'b']));
 var summation = function (num) {
     let res = 0;
     for(let i = 1; i <= num; i++){
-
+        res += i;
     }
     return res;
 }
