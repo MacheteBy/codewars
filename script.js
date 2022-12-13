@@ -1316,7 +1316,7 @@ var isSquare = function (n) {
     } else {
         return n > 0 && Math.sqrt(n) % 1 == 0;
     }
-}
+};
 
 console.log(isSquare(25));
 
@@ -1324,8 +1324,7 @@ console.log(isSquare(25));
 
 //next
 function addFive(num) {
-    var total = num + 5
-    return num
-  }
+    return num + 5;
+}
 
-  console.log(addFive(5));
+console.log(addFive(5));
