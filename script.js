@@ -1348,3 +1348,4 @@ function combat(health, damage) {
 }
 
 console.log(combat(100, 110));
+
