@@ -1310,6 +1310,11 @@ function removeUrlAnchor(url) {
 console.log(removeUrlAnchor('www.codewars.com#about'));
 
 //next
-var isSquare = function(n){
-    return false; // fix me
-  }
+var isSquare = function (n) {
+    let res = n / 2;
+    if(n >= 0){
+        return (res * res) == n ? true : false; 
+    } 
+}
+
+console.log(isSquare(4));
