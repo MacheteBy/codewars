@@ -1333,8 +1333,10 @@ console.log(addFive(5));
 function pipeFix(numbers){
     let arr = numbers.sort((a, b) => a - b);
     let res = [];
-    
-    return arr;
+    for(let i = 0; i < arr[arr.length - 1]; i++){
+
+    }
+    return arr[arr.length - 1];
 }
 
 console.log(pipeFix([1,2,12,5,6,8,9]));
