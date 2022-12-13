@@ -1330,13 +1330,16 @@ function addFive(num) {
 console.log(addFive(5));
 
 //next
-function pipeFix(numbers){
+function pipeFix(numbers) {
     let arr = numbers.sort((a, b) => a - b);
     let res = [];
-    for(let i = arr[0]; i <= arr[arr.length - 1]; i++){
+    for (let i = arr[0]; i <= arr[arr.length - 1]; i++) {
         res.push(i);
     }
     return res;
 }
 
-console.log(pipeFix([1,2,12,5,6,8,9]));
+console.log(pipeFix([1, 2, 12, 5, 6, 8, 9]));
+
+
+//next
