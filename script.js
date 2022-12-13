@@ -1328,3 +1328,13 @@ function addFive(num) {
 }
 
 console.log(addFive(5));
+
+//next
+function pipeFix(numbers){
+    let arr = numbers.sort((a, b) => a - b);
+    let res = [];
+    
+    return arr;
+}
+
+console.log(pipeFix([1,2,12,5,6,8,9]));
