@@ -1343,3 +1343,8 @@ console.log(pipeFix([1, 2, 12, 5, 6, 8, 9]));
 
 
 //next
+function combat(health, damage) {
+    return health - damage > 0 ?  health - damage : 0;
+}
+
+console.log(combat(100, 110));
