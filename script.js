@@ -1308,3 +1308,8 @@ function removeUrlAnchor(url) {
 }
 
 console.log(removeUrlAnchor('www.codewars.com#about'));
+
+//next
+var isSquare = function(n){
+    return false; // fix me
+  }
