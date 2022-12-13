@@ -1311,11 +1311,15 @@ console.log(removeUrlAnchor('www.codewars.com#about'));
 
 //next
 var isSquare = function (n) {
-if(n == 0){
-    return true;
-}else{
-    return n > 0 && Math.sqrt(n) % 1 == 0;
-}
+    if (n == 0) {
+        return true;
+    } else {
+        return n > 0 && Math.sqrt(n) % 1 == 0;
+    }
 }
 
 console.log(isSquare(25));
+
+
+
+//next
