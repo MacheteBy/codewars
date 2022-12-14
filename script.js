@@ -1376,4 +1376,7 @@ function rentalCarCost(d) {
     }
 }
 
-console.log(rentalCarCost(2));
+console.log(rentalCarCost(8));
+
+
+//next
