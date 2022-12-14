@@ -1404,4 +1404,7 @@ function index(array, n) {
     return array[n] == undefined ? -1 : Math.pow(array.find((element) => element == array[n]), n);
 }
 
-console.log(index([1, 3, 10, 100],3));
+console.log(index([1, 3, 10, 100], 3));
+
+
+//next
