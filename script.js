@@ -1360,7 +1360,14 @@ console.log(arrayDiff([1, 2, 3], [1, 2]));
 
 //next
 function problem(x) {
-    return typeof(x) == 'number' ? x * 50 + 6 : 'Error';
+    return typeof (x) == 'number' ? x * 50 + 6 : 'Error';
 }
 
 console.log(problem(1));
+
+//next
+function rentalCarCost(d) {
+    // Your solution here
+}
+
+console.log(rentalCarCost());
