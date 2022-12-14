@@ -1398,3 +1398,8 @@ function towerBuilder(nFloors) {
 
 
 console.log(towerBuilder(2));
+
+//next
+function index(array, n){
+    //your code here
+  }
