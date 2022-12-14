@@ -1389,7 +1389,7 @@ const arr = N => Array.from({
 function towerBuilder(nFloors) {
     let space, block, tower = [];
     for(let i = 1; i <= nFloors; i++){
-        space = " ".repeat(nFloors - 1);
+        space = " ".repeat(nFloors - i);
         block = "*".repeat((2*i) - 1);
         tower.push(`${space}${block}${space}`);
     }
@@ -1397,4 +1397,4 @@ function towerBuilder(nFloors) {
 }
 
 
-console.log(towerBuilder(4));
+console.log(towerBuilder(2));
