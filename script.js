@@ -1388,9 +1388,9 @@ const arr = N => Array.from({
 //next
 function towerBuilder(nFloors) {
     let space, block, tower = [];
-    for(let i = 1; i <= nFloors; i++){
+    for (let i = 1; i <= nFloors; i++) {
         space = " ".repeat(nFloors - i);
-        block = "*".repeat((2*i) - 1);
+        block = "*".repeat((2 * i) - 1);
         tower.push(`${space}${block}${space}`);
     }
     return tower;
@@ -1400,6 +1400,8 @@ function towerBuilder(nFloors) {
 console.log(towerBuilder(2));
 
 //next
-function index(array, n){
-    //your code here
-  }
+function index(array, n) {
+    
+}
+
+console.log(index([1, 2, 3, 4],2));
