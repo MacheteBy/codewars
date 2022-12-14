@@ -1381,3 +1381,6 @@ console.log(rentalCarCost(8));
 
 //next
 const arr = N => Array.from({length: N}, (elem, index) => elem = index);
+
+
+//next
