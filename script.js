@@ -1367,7 +1367,13 @@ console.log(problem(1));
 
 //next
 function rentalCarCost(d) {
-    // Your solution here
+    if(d < 3){
+        return d * 40;
+    }else if(d >= 3 && d < 7){
+        return (d * 40) - 20;
+    }else if(d >= 7){
+        return (d * 40) - 50;
+    }
 }
 
-console.log(rentalCarCost());
+console.log(rentalCarCost(2));
