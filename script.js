@@ -1367,11 +1367,11 @@ console.log(problem(1));
 
 //next
 function rentalCarCost(d) {
-    if(d < 3){
+    if (d < 3) {
         return d * 40;
-    }else if(d >= 3 && d < 7){
+    } else if (d >= 3 && d < 7) {
         return (d * 40) - 20;
-    }else if(d >= 7){
+    } else if (d >= 7) {
         return (d * 40) - 50;
     }
 }
@@ -1380,7 +1380,15 @@ console.log(rentalCarCost(8));
 
 
 //next
-const arr = N => Array.from({length: N}, (elem, index) => elem = index);
+const arr = N => Array.from({
+    length: N
+}, (elem, index) => elem = index);
 
 
 //next
+function towerBuilder(nFloors) {
+    // build here
+}
+
+
+console.log(towerBuilder());
