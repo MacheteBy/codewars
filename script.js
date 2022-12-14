@@ -1359,3 +1359,8 @@ console.log(arrayDiff([1, 2, 3], [1, 2]));
 
 
 //next
+function problem(x) {
+    //your code here
+}
+
+console.log(problem(1));
