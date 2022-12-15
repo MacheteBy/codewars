@@ -1425,3 +1425,6 @@ console.log(hello('johN'));
 
 
 //next
+function mouthSize(animal) {
+    // code here
+  }
