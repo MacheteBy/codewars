@@ -1410,7 +1410,8 @@ console.log(index([1, 3, 10, 100], 3));
 //next
 
 function hello(name) {
-    return name != null ? "Hello, " + name[0].toUpperCase() + name.slice(1) + "!" : "Hello, World!";
+    let strName = name.toLowerCase();
+    return strName != null ? "Hello, " + strName[0].toUpperCase() + strName.slice(1) + "!" : "Hello, World!";
 }
 
-console.log(hello('Vin'));
+console.log(hello('johN'));
