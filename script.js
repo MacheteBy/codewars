@@ -1452,11 +1452,11 @@ console.log(sumDigits(99));
 
 //next
 function factorial(n) {
-    let result = 1;
-    for (let i = 2; i <= n; i++) {
-        result *= i;
+    if (n <= 1) {
+        return 1;
+    } else {
+        return n * factorial(n - 1);
     }
-    return result;
 }
 
 console.log(factorial(3));
