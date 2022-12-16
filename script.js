@@ -1500,13 +1500,13 @@ console.log(reverseLetter("ultr53o?n"));
 
 //next
 var capitals = function (word) {
-	var res = [];
-  for(var i = 0; i < word.length; i++){
-    if(word[i] == word[i].toUpperCase()){
-      res.push(word.indexOf(word[i]))
+    var res = [];
+    for (var i = 0; i < word.length; i++) {
+        if (word[i] == word[i].toUpperCase()) {
+            res.push(word.indexOf(word[i]))
+        }
     }
-  }
- return res;
+    return res;
 };
 
 console.log(capitals('CodEWaRs'));
