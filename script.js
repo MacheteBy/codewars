@@ -1509,4 +1509,4 @@ var capitals = function (word) {
  return res;
 };
 
-console.log(capitals());
+console.log(capitals('CodEWaRs'));
