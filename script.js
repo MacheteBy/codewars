@@ -1492,3 +1492,8 @@ console.log(binToDec("1001001"));
 
 
 //next
+function reverseLetter(str) {
+    //coding and coding..
+
+
+}
