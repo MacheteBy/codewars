@@ -1508,3 +1508,5 @@ var capitals = function (word) {
   }
  return res;
 };
+
+console.log(capitals());
