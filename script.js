@@ -1485,10 +1485,7 @@ console.log(reverse('no one cares'));
 
 //next
 function binToDec(bin) {
-    let res = 0;
-    for(let i = 0; i < bin.length; i++){
-
-    }
+    return parseInt(bin, 2);
 }
 
 console.log(binToDec("1001001"));
