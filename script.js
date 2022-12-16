@@ -1489,3 +1489,6 @@ function binToDec(bin) {
 }
 
 console.log(binToDec("1001001"));
+
+
+//next
