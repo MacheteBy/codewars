@@ -1484,3 +1484,8 @@ function reverse(string) {
 console.log(reverse('no one cares'));
 
 //next
+function binToDec(bin) {
+    // ...
+}
+
+console.log(binToDec("1001001"));
