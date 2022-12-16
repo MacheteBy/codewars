@@ -1499,3 +1499,6 @@ function reverseLetter(str) {
 console.log(reverseLetter("ultr53o?n"));
 
 //next
+var capitals = function (word) {
+	// Write your code here
+};
