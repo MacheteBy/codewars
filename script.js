@@ -1477,3 +1477,8 @@ function saleHotdogs(n) {
 console.log(saleHotdogs(5));
 
 //next
+function reverse(string) {
+    return (string.split(' ').reverse()).toString().replace(/([,])/g, ' ');
+}
+
+console.log(reverse('no one cares'));
