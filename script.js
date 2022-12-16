@@ -1497,3 +1497,5 @@ function reverseLetter(str) {
 
 
 }
+
+console.log(reverseLetter());
