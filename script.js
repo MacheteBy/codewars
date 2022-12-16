@@ -1493,9 +1493,7 @@ console.log(binToDec("1001001"));
 
 //next
 function reverseLetter(str) {
-    //coding and coding..
-
-
+    return str.replace(/[^a-zа-яё]/gi, '').split('').reverse().join('');
 }
 
 console.log(reverseLetter("ultr53o?n"));
