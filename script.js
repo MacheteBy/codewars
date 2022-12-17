@@ -1532,10 +1532,10 @@ console.log(zeroFuel(50, 25, 2));
 //next
 String.prototype.toAlternatingCase = function () {
     let strRes = '';
-    for(let i = 0; i < this.length; i++){
-        if(this[i] == this[i].toLowerCase()){
+    for (let i = 0; i < this.length; i++) {
+        if (this[i] == this[i].toLowerCase()) {
             str += this[i].toUpperCase();
-        }else{
+        } else {
             str += this[i].toLowerCase();
         }
     }
