@@ -1543,3 +1543,9 @@ String.prototype.toAlternatingCase = function () {
     }
 
 console.log("hello world".toAlternatingCase());
+
+
+//next
+function peopleWithAgeDrink(old) {
+    return '';
+  };
