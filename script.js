@@ -1524,4 +1524,6 @@ console.log(stringToArray("Robin Singh"));
 //next
 const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
     // TODO
-  };
+};
+
+console.log(zeroFuel(50, 25, 2));
