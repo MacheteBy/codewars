@@ -1510,3 +1510,7 @@ var capitals = function (word) {
 };
 
 console.log(capitals('CodEWaRs'));
+
+
+
+//next
