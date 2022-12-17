@@ -1533,3 +1533,5 @@ console.log(zeroFuel(50, 25, 2));
 String.prototype.toAlternatingCase = function () {
     // Define your method here :)
 }
+
+console.log(toAlternatingCase("hello world"));
