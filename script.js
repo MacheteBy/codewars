@@ -1527,3 +1527,10 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
 };
 
 console.log(zeroFuel(50, 25, 2));
+
+
+//next
+String.prototype.toAlternatingCase = function () {
+    // Define your method here :)
+  }
+  
