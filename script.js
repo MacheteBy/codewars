@@ -1519,3 +1519,5 @@ function stringToArray(string){
 	// code code code
 
 }
+
+console.log(stringToArray("Robin Singh"));
