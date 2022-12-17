@@ -1532,22 +1532,30 @@ console.log(zeroFuel(50, 25, 2));
 //next
 String.prototype.toAlternatingCase = function () {
     let str = '';
-      for(let i = 0; i< this.length; i++){
-        if (this[i] == this[i].toLowerCase()){ 
-          str += this[i].toUpperCase();
+    for (let i = 0; i < this.length; i++) {
+        if (this[i] == this[i].toLowerCase()) {
+            str += this[i].toUpperCase();
         } else {
-          str += this[i].toLowerCase();
+            str += this[i].toLowerCase();
         }
-      }
-      return str;
     }
+    return str;
+}
 
 console.log("hello world".toAlternatingCase());
 
 
 //next
 function peopleWithAgeDrink(old) {
-    return '';
-  };
+    if (old < 14) {
+        return ("drink toddy");
+    } else if ((old < 18) && (old >= 14)) {
+        return ("drink coke");
+    } else if ((old < 21) && (old >= 18)) {
+        return ("drink beer");
+    } else if (old >= 21) {
+        return ("drink whisky");
+    }
+};
 
-  console.log(peopleWithAgeDrink(22));
+console.log(peopleWithAgeDrink(22));
