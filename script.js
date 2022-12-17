@@ -1514,3 +1514,8 @@ console.log(capitals('CodEWaRs'));
 
 
 //next
+function stringToArray(string){
+
+	// code code code
+
+}
