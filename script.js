@@ -1549,3 +1549,5 @@ console.log("hello world".toAlternatingCase());
 function peopleWithAgeDrink(old) {
     return '';
   };
+
+  console.log(peopleWithAgeDrink(22));
