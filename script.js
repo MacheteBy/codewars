@@ -1573,4 +1573,4 @@ const areaOrPerimeter = function (l, w) {
     // Return your answer
 };
 
-console.log();
+console.log(areaOrPerimeter(3,  3));
