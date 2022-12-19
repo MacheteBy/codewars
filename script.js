@@ -1595,7 +1595,11 @@ console.log(hexToDec("a"))
 
 //next
 function position(letter) {
-    //Write your own Code!
+    let abcArr = 'abcdefghijklmnopqrstuvwxyz'.split('');
+    for(let i = 0; i < abcArr.length; i++){
+        
+    }
+    return abcArr;
 }
 
 console.log(position());
