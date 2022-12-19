@@ -1592,3 +1592,5 @@ function hexToDec(hexString) {
 }
 
 console.log(hexToDec("a"))
+
+//next
