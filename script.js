@@ -1597,9 +1597,11 @@ console.log(hexToDec("a"))
 function position(letter) {
     let abcArr = 'abcdefghijklmnopqrstuvwxyz'.split('');
     for(let i = 0; i < abcArr.length; i++){
-        
+        if(abcArr[i] == letter.toLowerCase()){
+            return `Position of alphabet: ${i+1}`
+        }
     }
     return abcArr;
 }
 
-console.log(position());
+console.log(position("z"));
