@@ -1562,7 +1562,7 @@ console.log(peopleWithAgeDrink(22));
 
 //next
 function simpleMultiplication(number) {
-    return;
+    return number % 2 == 0 ? number * 8 : number * 9;
 }
 
 console.log(simpleMultiplication(2));
