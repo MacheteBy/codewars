@@ -1569,3 +1569,6 @@ console.log(simpleMultiplication(1));
 
 
 //next
+const areaOrPerimeter = function(l , w) {
+    // Return your answer
+  };
