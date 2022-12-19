@@ -1566,3 +1566,6 @@ function simpleMultiplication(number) {
 }
 
 console.log(simpleMultiplication(1));
+
+
+//next
