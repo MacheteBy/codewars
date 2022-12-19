@@ -1584,4 +1584,4 @@ function getChar(c) {
     // ...
 }
 
-console.log();
+console.log(getChar(56));
