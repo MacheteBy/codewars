@@ -1559,3 +1559,5 @@ function peopleWithAgeDrink(old) {
 };
 
 console.log(peopleWithAgeDrink(22));
+
+//next
