@@ -1570,9 +1570,9 @@ console.log(simpleMultiplication(1));
 
 //next
 const areaOrPerimeter = function (l, w) {
-    if(l == w){
+    if (l == w) {
         return l * w;
-    }else{
+    } else {
         return 2 * (l + w);
     }
 };
@@ -1580,3 +1580,6 @@ const areaOrPerimeter = function (l, w) {
 console.log(areaOrPerimeter(6, 10));
 
 //next
+function getChar(c) {
+    // ...
+}
