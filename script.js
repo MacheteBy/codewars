@@ -1587,6 +1587,8 @@ function getChar(c) {
 console.log(getChar(56));
 
 //next
-function hexToDec(hexString){
+function hexToDec(hexString) {
     //your code here
-  }
+}
+
+console.log(hexToDec("a"))
