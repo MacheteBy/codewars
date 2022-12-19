@@ -1565,4 +1565,4 @@ function simpleMultiplication(number) {
     // your code........
 }
 
-console.log();
+console.log(simpleMultiplication());
