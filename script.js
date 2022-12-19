@@ -1588,7 +1588,7 @@ console.log(getChar(56));
 
 //next
 function hexToDec(hexString) {
-    //your code here
+    return parseInt(hexString, 2);
 }
 
 console.log(hexToDec("a"))
