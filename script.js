@@ -1583,3 +1583,5 @@ console.log(areaOrPerimeter(6, 10));
 function getChar(c) {
     // ...
 }
+
+console.log();
