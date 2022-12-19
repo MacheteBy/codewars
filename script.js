@@ -1570,7 +1570,9 @@ console.log(simpleMultiplication(1));
 
 //next
 const areaOrPerimeter = function (l, w) {
-    // Return your answer
+    if(l == w){
+        return l * w;
+    }
 };
 
 console.log(areaOrPerimeter(3,  3));
