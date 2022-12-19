@@ -1564,3 +1564,5 @@ console.log(peopleWithAgeDrink(22));
 function simpleMultiplication(number) {
     // your code........
 }
+
+console.log();
