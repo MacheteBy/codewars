@@ -1581,7 +1581,7 @@ console.log(areaOrPerimeter(6, 10));
 
 //next
 function getChar(c) {
-    // ...
+    return String.fromCharCode(c);
 }
 
 console.log(getChar(56));
