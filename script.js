@@ -1601,7 +1601,6 @@ function position(letter) {
             return `Position of alphabet: ${i+1}`
         }
     }
-    return abcArr;
 }
 
 console.log(position("z"));
