@@ -1638,4 +1638,4 @@ function multiTable(number) {
     // good luck
 }
 
-console.log();
+console.log(multiTable(5));
