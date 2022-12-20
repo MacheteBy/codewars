@@ -1644,3 +1644,4 @@ function multiTable(number) {
 
 console.log(multiTable(5));
 
+//next
