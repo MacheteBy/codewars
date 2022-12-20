@@ -1660,3 +1660,9 @@ function alternativeCase(string){
 
 const alternativeCase = string => string.split('')
   .map((c,i) => i & 1 ? c.toUpperCase() : c.toLowerCase()).join('');
+
+  function alternativeCase(string){
+    return string.split('').map(function(c,i) {
+      return i & 1 ? c.toUpperCase() : c.toLowerCase();
+    }).join('');
+  }
