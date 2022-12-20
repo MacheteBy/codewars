@@ -1637,3 +1637,5 @@ console.log(main('take ', 'item'));
 function multiTable(number) {
     // good luck
 }
+
+console.log();
