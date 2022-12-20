@@ -1645,3 +1645,6 @@ function multiTable(number) {
 console.log(multiTable(5));
 
 //next
+function rowWeights(array) {
+    //your code here
+}
