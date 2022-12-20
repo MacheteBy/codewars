@@ -1666,3 +1666,15 @@ const alternativeCase = string => string.split('')
       return i & 1 ? c.toUpperCase() : c.toLowerCase();
     }).join('');
   }
+
+  function alternativeCase(string){
+    for(var i = 0; i < string.length; i++){
+        if (i % 2 != 0) {
+            string[i].toUpperCase();
+        }
+        else {
+            string[i].toLowerCase();
+        }   
+    }
+    return string;
+}
