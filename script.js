@@ -1647,9 +1647,14 @@ console.log(multiTable(5));
 //next
 function rowWeights(array) {
     let arr = [0, 0];
-    for(let i = 0; i < arr.length; i++){
-
+    for(let i = 0; i < array.length; i++){
+        if(i % 2 == 0){
+            arr[0] = (arr[0] + array[i]);
+        }else if(i % 2 != 0){
+            arr[1] = (arr[1] + array[i]);
+        }
     }
+    return arr;
 }
 
-console.log(rowWeights([80]));
+console.log(rowWeights([50,60,70,80]));
