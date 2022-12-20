@@ -1628,3 +1628,19 @@ console.log(capitalize("codewars"));
 
 //next
 
+function capitalize(str) {
+    let even = '';
+    let odd = '';
+    for (let i = 0; i < str.length; i++) {
+      if (i % 2 === 0) {
+        even += str.toUpperCase()[i];
+        odd += str[i];
+      } else {
+        even += str[i];
+        odd += str.toUpperCase()[i];
+      }
+    }
+    return [even, odd];
+  }
+  capitalize('abcdef');    // ['AbCdEf', 'aBcDeF']
+  capitalize('codewars');  // ['CoDeWaRs', 'cOdEwArS']
