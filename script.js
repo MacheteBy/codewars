@@ -1611,4 +1611,4 @@ function capitalize(s) {
     return [];
 };
 
-console.log(capitalize());
+console.log(capitalize("abcdef"));
