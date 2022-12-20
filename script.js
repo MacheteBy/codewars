@@ -1607,3 +1607,6 @@ console.log(position("z"));
 
 
 //next
+function capitalize(s){
+    return [];
+  };
