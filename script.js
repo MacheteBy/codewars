@@ -1611,11 +1611,11 @@ function capitalize(s) {
     let strFirst = "";
     let strSecond = "";
     let resArr = [];
-    for(let i = 0; i < s.length; i++){
-        if(i % 2 == 0){
+    for (let i = 0; i < s.length; i++) {
+        if (i % 2 == 0) {
             strFirst += s[i].toUpperCase();
             strSecond += s[i].toLowerCase();
-        }else{
+        } else {
             strFirst += s[i].toLowerCase();
             strSecond += s[i].toUpperCase();
         }
@@ -1625,3 +1625,5 @@ function capitalize(s) {
 };
 
 console.log(capitalize("codewars"));
+
+//next
