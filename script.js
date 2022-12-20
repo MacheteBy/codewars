@@ -1596,8 +1596,8 @@ console.log(hexToDec("a"))
 //next
 function position(letter) {
     let abcArr = 'abcdefghijklmnopqrstuvwxyz'.split('');
-    for(let i = 0; i < abcArr.length; i++){
-        if(abcArr[i] == letter.toLowerCase()){
+    for (let i = 0; i < abcArr.length; i++) {
+        if (abcArr[i] == letter.toLowerCase()) {
             return `Position of alphabet: ${i+1}`
         }
     }
@@ -1607,8 +1607,8 @@ console.log(position("z"));
 
 
 //next
-function capitalize(s){
+function capitalize(s) {
     return [];
-  };
+};
 
-  console.log();
+console.log();
