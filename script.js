@@ -1627,3 +1627,4 @@ function capitalize(s) {
 console.log(capitalize("codewars"));
 
 //next
+
