@@ -1652,4 +1652,4 @@ function rowWeights(array) {
     }
 }
 
-console.log();
+console.log(rowWeights([80]));
