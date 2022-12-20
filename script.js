@@ -1636,7 +1636,7 @@ console.log(main('take ', 'item'));
 //next
 function multiTable(number) {
     let res = '';
-    for(let i = 1; i <= 10; i++){
+    for (let i = 1; i <= 10; i++) {
         res += `${i} * ${number} = ${i * number}\n`;
     }
     return res.slice(0, -1);
