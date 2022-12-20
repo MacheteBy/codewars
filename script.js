@@ -1663,3 +1663,5 @@ console.log(rowWeights([50, 60, 70, 80]));
 function solution(nums){
 
 }
+
+console.log(solution([1,2,3,10,5]));
