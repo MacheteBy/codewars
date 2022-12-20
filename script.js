@@ -1624,9 +1624,16 @@ console.log(capitalize("codewars"));
 
 
 function alternativeCase(string){
-    return string.split('').map(function(c,i) {
-      return i & 1 ? c.toUpperCase() : c.toLowerCase();
-    }).join('');
-  }
+    var newString = [];
+    for(var i = 0; i < string.length; i++){
+       if (i % 2 != 0) {
+          newString[i] = string[i].toUpperCase();
+       }
+       else {
+          newString[i] = string[i].toLowerCase();
+       }   
+    }
+  return newString.join('');
+}
 
   console.log(alternativeCase("codewars"));
