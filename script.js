@@ -1608,15 +1608,20 @@ console.log(position("z"));
 
 //next
 function capitalize(s) {
-    let strRes = "";
+    let strFirst = "";
+    let strSecond = "";
+    let resArr = [];
     for(let i = 0; i < s.length; i++){
         if(i % 2 == 0){
-           strRes += s[i].toUpperCase();
+            strFirst += s[i].toUpperCase();
+            strSecond += s[i].toLowerCase();
         }else{
-           strRes += s[i].toLowerCase();
+            strFirst += s[i].toLowerCase();
+            strSecond += s[i].toUpperCase();
         }
     }
-    return strRes;
+    resArr.push(strFirst, strSecond);
+    return resArr;
 };
 
 console.log(capitalize("codewars"));
