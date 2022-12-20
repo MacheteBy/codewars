@@ -1648,6 +1648,8 @@ console.log(multiTable(5));
 function rowWeights(array) {
     let arr = [0, 0];
     for(let i = 0; i < arr.length; i++){
-        
+
     }
 }
+
+console.log();
