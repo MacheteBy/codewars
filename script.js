@@ -1657,3 +1657,6 @@ function alternativeCase(string){
     }
     return output;
 }
+
+const alternativeCase = string => string.split('')
+  .map((c,i) => i & 1 ? c.toUpperCase() : c.toLowerCase()).join('');
