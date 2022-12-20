@@ -1660,3 +1660,6 @@ function rowWeights(array) {
 console.log(rowWeights([50, 60, 70, 80]));
 
 //next
+function solution(nums){
+
+}
