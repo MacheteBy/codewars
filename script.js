@@ -1630,3 +1630,5 @@ console.log(capitalize("codewars"));
 function main (verb, noun){
   return verb + noun;
 }
+
+console.log();
