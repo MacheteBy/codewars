@@ -1644,3 +1644,11 @@ function capitalize(str) {
   }
   capitalize('abcdef');    // ['AbCdEf', 'aBcDeF']
   capitalize('codewars');  // ['CoDeWaRs', 'cOdEwArS']
+
+  function capitalize(str) {
+    const even = str.split('').map((i, index) => index % 2 === 0 ? i.toUpperCase() : i).join('');
+    const odd = str.split('').map((i, index) => index % 2 !== 0 ? i.toUpperCase() : i).join('');
+    return [even, odd];
+  }
+  capitalize('abcdef');    // ['AbCdEf', 'aBcDeF']
+  capitalize('codewars');  // ['CoDeWaRs', 'cOdEwArS']
