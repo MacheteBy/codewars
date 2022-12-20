@@ -1629,52 +1629,49 @@ console.log(capitalize("codewars"));
 //next
 const alternativeCase = s => s.replace(/(\S\s*)(\S?)/g, (m, a, b) => a.toUpperCase() + b.toLowerCase());
 
-console.log( alternativeCase('alternative Case') )
+console.log(alternativeCase('alternative Case'))
 
 
-function alternativeCase(string){
+function alternativeCase(string) {
     var newString = [];
-    for(var i = 0; i < string.length; i++){
-       if (i % 2 != 0) {
-          newString[i] = string[i].toUpperCase();
-       }
-       else {
-          newString[i] = string[i].toLowerCase();
-       }   
+    for (var i = 0; i < string.length; i++) {
+        if (i % 2 != 0) {
+            newString[i] = string[i].toUpperCase();
+        } else {
+            newString[i] = string[i].toLowerCase();
+        }
     }
-  return newString.join('');
+    return newString.join('');
 }
 
-function alternativeCase(string){
+function alternativeCase(string) {
     var output = "";
-    for(var i = 0; i < string.length; i++){
+    for (var i = 0; i < string.length; i++) {
         if (i % 2 != 0) {
             output += string[i].toUpperCase();
-        }
-        else {
+        } else {
             output += string[i].toLowerCase();
-         }   
+        }
     }
     return output;
 }
 
 const alternativeCase = string => string.split('')
-  .map((c,i) => i & 1 ? c.toUpperCase() : c.toLowerCase()).join('');
+    .map((c, i) => i & 1 ? c.toUpperCase() : c.toLowerCase()).join('');
 
-  function alternativeCase(string){
-    return string.split('').map(function(c,i) {
-      return i & 1 ? c.toUpperCase() : c.toLowerCase();
+function alternativeCase(string) {
+    return string.split('').map(function (c, i) {
+        return i & 1 ? c.toUpperCase() : c.toLowerCase();
     }).join('');
-  }
+}
 
-  function alternativeCase(string){
-    for(var i = 0; i < string.length; i++){
+function alternativeCase(string) {
+    for (var i = 0; i < string.length; i++) {
         if (i % 2 != 0) {
             string[i].toUpperCase();
-        }
-        else {
+        } else {
             string[i].toLowerCase();
-        }   
+        }
     }
     return string;
 }
