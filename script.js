@@ -1661,7 +1661,7 @@ console.log(rowWeights([50, 60, 70, 80]));
 
 //next
 function solution(nums){
-
+    return nums !== null && nums.length > 0 ? nums.sort((a, b) => a - b) : [];
 }
 
-console.log(solution([1,2,3,10,5]));
+console.log(solution(null));
