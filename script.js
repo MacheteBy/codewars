@@ -1630,3 +1630,17 @@ console.log(capitalize("codewars"));
 const alternativeCase = s => s.replace(/(\S\s*)(\S?)/g, (m, a, b) => a.toUpperCase() + b.toLowerCase());
 
 console.log( alternativeCase('alternative Case') )
+
+
+function alternativeCase(string){
+    var newString = [];
+    for(var i = 0; i < string.length; i++){
+       if (i % 2 != 0) {
+          newString[i] = string[i].toUpperCase();
+       }
+       else {
+          newString[i] = string[i].toLowerCase();
+       }   
+    }
+  return newString.join('');
+}
