@@ -1622,10 +1622,11 @@ function capitalize(s) {
 console.log(capitalize("codewars"));
 
 
+
 function alternativeCase(string){
     return string.split('').map(function(c,i) {
       return i & 1 ? c.toUpperCase() : c.toLowerCase();
     }).join('');
   }
 
-  console.log();
+  console.log(alternativeCase("codewars"));
