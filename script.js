@@ -1608,7 +1608,22 @@ console.log(position("z"));
 
 //next
 function capitalize(s) {
-    return [];
+    let strRes = "";
+    for(let i = 0; i < s.length; i++){
+        if(i % 2 == 0){
+           strRes += s[i].toUpperCase();
+        }else{
+           strRes += s[i].toLowerCase();
+        }
+    }
+    return strRes;
 };
 
-console.log(capitalize("abcdef"));
+console.log(capitalize("codewars"));
+
+
+function alternativeCase(string){
+    return string.split('').map(function(c,i) {
+      return i & 1 ? c.toUpperCase() : c.toLowerCase();
+    }).join('');
+  }
