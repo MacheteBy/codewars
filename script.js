@@ -1627,3 +1627,5 @@ function alternativeCase(string){
       return i & 1 ? c.toUpperCase() : c.toLowerCase();
     }).join('');
   }
+
+  console.log();
