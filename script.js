@@ -1634,3 +1634,6 @@ function main(verb, noun) {
 console.log(main('take ', 'item'));
 
 //next
+function multiTable(number) {
+    // good luck
+}
