@@ -1627,3 +1627,6 @@ function capitalize(s) {
 console.log(capitalize("codewars"));
 
 //next
+function main [verb, noun]
+  return verb + noun
+}
