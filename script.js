@@ -1676,5 +1676,5 @@ console.log(howManyLightsabersDoYouOwn("Zach"));
 
 //next
 function greet(){
-    
+    return "hello world!";
 }
