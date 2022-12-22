@@ -1668,3 +1668,6 @@ console.log(solution(null));
 
 
 //next
+function howManyLightsabersDoYouOwn(name) {
+    return
+  }
