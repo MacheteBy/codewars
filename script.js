@@ -1665,3 +1665,6 @@ function solution(nums){
 }
 
 console.log(solution(null));
+
+
+//next
