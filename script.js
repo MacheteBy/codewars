@@ -1675,3 +1675,6 @@ function howManyLightsabersDoYouOwn(name) {
 console.log(howManyLightsabersDoYouOwn("Zach"));
 
 //next
+function greet(){
+    
+}
