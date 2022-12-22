@@ -1683,7 +1683,7 @@ console.log(greet());
 
 //next
 function isPalindrome(x) {
-    // your code here
+    return x.toLowerCase();
 }
 
 console.log(isPalindrome("Madam"));
