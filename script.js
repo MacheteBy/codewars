@@ -1683,7 +1683,8 @@ console.log(greet());
 
 //next
 function isPalindrome(x) {
-    return x.toLowerCase();
+    let str = x.split('').reverse().join('').toLowerCase();
+    return str == x.toLowerCase() ? true : false;
 }
 
 console.log(isPalindrome("Madam"));
