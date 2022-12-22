@@ -1682,3 +1682,8 @@ function greet() {
 console.log(greet());
 
 //next
+function isPalindrome(x) {
+    // your code here
+}
+
+console.log(isPalindrome("Madam"));
