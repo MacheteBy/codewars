@@ -1669,7 +1669,7 @@ console.log(solution(null));
 
 //next
 function howManyLightsabersDoYouOwn(name) {
-    return
+    return name == "Zach" ? 18 : 0;
 }
 
 console.log(howManyLightsabersDoYouOwn("Zach"));
