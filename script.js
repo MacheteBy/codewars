@@ -1672,4 +1672,4 @@ function howManyLightsabersDoYouOwn(name) {
     return
 }
 
-console.log(howManyLightsabersDoYouOwn());
+console.log(howManyLightsabersDoYouOwn("Zach"));
