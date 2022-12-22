@@ -1679,4 +1679,4 @@ function greet(){
     return "hello world!";
 }
 
-console.log();
+console.log(greet());
