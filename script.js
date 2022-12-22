@@ -1660,7 +1660,7 @@ function rowWeights(array) {
 console.log(rowWeights([50, 60, 70, 80]));
 
 //next
-function solution(nums){
+function solution(nums) {
     return nums !== null && nums.length > 0 ? nums.sort((a, b) => a - b) : [];
 }
 
@@ -1670,4 +1670,6 @@ console.log(solution(null));
 //next
 function howManyLightsabersDoYouOwn(name) {
     return
-  }
+}
+
+console.log();
