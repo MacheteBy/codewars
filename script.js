@@ -1693,3 +1693,5 @@ console.log(isPalindrome("Madam"));
 function firstNonConsecutive (arr) {
 
 }
+
+console.log(firstNonConsecutive());
