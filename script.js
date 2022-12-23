@@ -1698,6 +1698,7 @@ function firstNonConsecutive (arr) {
             return arr[i + 1];
         }
     }
+
 }
 
-console.log(firstNonConsecutive([1,2,3,4,6,7,8]));
+console.log(firstNonConsecutive([1,2,3,4]));
