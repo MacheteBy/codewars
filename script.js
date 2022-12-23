@@ -1704,7 +1704,11 @@ console.log(firstNonConsecutive([1, 2, 3, 4, 6, 7, 8]));
 //next
 function addLength(str) {
     let arr = str.split(' ');
-    return arr[0].length;
+    let resArr = [];
+    for(let i = 0; i < arr.length; i++){
+        resArr.push(`${arr[i]} ${arr[i].length}`);
+    }
+    return resArr;
 }
 
-console.log(addLength('you will win'))
+console.log(addLength('you will win'));
