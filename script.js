@@ -1705,3 +1705,5 @@ console.log(firstNonConsecutive([1, 2, 3, 4, 6, 7, 8]));
 function addLength(str) {
     //start-here
 }
+
+console.log(addLength('you will win'))
