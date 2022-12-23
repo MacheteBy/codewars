@@ -1694,10 +1694,8 @@ function firstNonConsecutive (arr) {
     let step = arr[1] - arr[0];
     let res;
     for(let i = 0; i < arr.length; i++){
-        if(arr[i + step] !== arr[i + 1]){
+        if(arr[i] + step !== arr[i + 1]){
             return arr[i + 1];
-        }else{
-            return null;
         }
     }
 }
