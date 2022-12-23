@@ -1702,3 +1702,6 @@ function firstNonConsecutive(arr) {
 console.log(firstNonConsecutive([1, 2, 3, 4, 6, 7, 8]));
 
 //next
+function addLength(str) {
+    //start-here
+}
