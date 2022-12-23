@@ -1704,7 +1704,7 @@ console.log(firstNonConsecutive([1, 2, 3, 4, 6, 7, 8]));
 //next
 function addLength(str) {
     let arr = str.split(' ');
-    return arr;
+    return arr[0].length;
 }
 
 console.log(addLength('you will win'))
