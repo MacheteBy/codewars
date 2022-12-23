@@ -1688,3 +1688,8 @@ function isPalindrome(x) {
 }
 
 console.log(isPalindrome("Madam"));
+
+//next
+function firstNonConsecutive (arr) {
+
+}
