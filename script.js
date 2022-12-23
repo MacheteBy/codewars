@@ -1690,8 +1690,13 @@ function isPalindrome(x) {
 console.log(isPalindrome("Madam"));
 
 //next
-function firstNonConsecutive (arr) {
-    return arr.length < 2 || arr == [] ? null : arr.find((a, b, c) => b && a - c[b-1] > 1) || null;
+function firstNonConsecutive(arr) {
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i - 1] + 1 !== arr[i]) {
+            return arr[i];
+        }
+    }
+    return null;
 }
 
-console.log(firstNonConsecutive([8,9,10,11,12,13,14,15,16]));
+console.log(firstNonConsecutive([1, 2, 3, 4, 6, 7, 8]));
