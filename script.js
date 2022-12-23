@@ -1691,7 +1691,7 @@ console.log(isPalindrome("Madam"));
 
 //next
 function firstNonConsecutive (arr) {
-    return arr.find((n,i,s) => i && n-s[i-1] > 1);
+    return arr.length < 2 ? null : arr.find((a, b, c) => b && a - c[b-1] > 1);
 }
 
 console.log(firstNonConsecutive([1,2,3,4,6,7,8]));
