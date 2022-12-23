@@ -1691,15 +1691,7 @@ console.log(isPalindrome("Madam"));
 
 //next
 function firstNonConsecutive (arr) {
-    let step = arr[1] - arr[0];
-    let res = [];
-    for(let i = 0; i < arr.length; i++){
-        if(arr[i] + step !== arr[i + 1]){
-            res += arr[i + 1];
-        }
-        return null;
-    }
-    return res;
+    return arr.find((n,i,s) => i && n-s[i-1] > 1);
 }
 
 console.log(firstNonConsecutive([1,2,3,4,6,7,8]));
