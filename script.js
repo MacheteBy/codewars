@@ -1715,3 +1715,8 @@ console.log(addLength('you will win'));
 
 
 //next
+function factorial(n) {
+    //your code here
+}
+
+console.log(factorial(4));
