@@ -1716,7 +1716,11 @@ console.log(addLength('you will win'));
 
 //next
 function factorial(n) {
-    //your code here
+    let res = n;
+    for(let i = n; i > 0; i--){
+        res = res * (i - 1);
+    }
+    return res;
 }
 
 console.log(factorial(4));
