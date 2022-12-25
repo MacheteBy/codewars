@@ -1786,3 +1786,12 @@ function twoSort(s) {
 }
 
 console.log(twoSort(["bitcoin", "take", "over", "the", "world", "maybe", "who", "knows", "perhaps"]));
+
+
+//next
+function sumMix(x){
+    return x.reduce((a, b) => Number(a) + Number(b));
+}
+
+
+console.log(sumMix([9, 3, '7', '3']));
