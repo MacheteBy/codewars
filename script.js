@@ -1765,13 +1765,13 @@ console.log(replace("!Hi! Hi!"));
 
 //next
 function arithmetic(a, b, operator) {
-    if(operator == 'add'){
+    if (operator == 'add') {
         return a + b;
-    }else if(operator == 'subtract'){
+    } else if (operator == 'subtract') {
         return a - b;
-    }else if(operator == 'multiply'){
+    } else if (operator == 'multiply') {
         return a * b;
-    }else if(operator == 'divide'){
+    } else if (operator == 'divide') {
         return a / b;
     }
 }
@@ -1789,10 +1789,10 @@ console.log(twoSort(["bitcoin", "take", "over", "the", "world", "maybe", "who", 
 
 
 
-function sumMix(x){
-    if(x.length > 1){
-       return x.reduce((a, b) => Number(a) + Number(b)); 
-    }else{
+function sumMix(x) {
+    if (x.length > 1) {
+        return x.reduce((a, b) => Number(a) + Number(b));
+    } else {
         return Number(x[0]);
     }
 }
@@ -1803,8 +1803,17 @@ console.log(sumMix([9]));
 
 
 //next
-function getDrinkByProfession(param){
-
+function getDrinkByProfession(param) {
+    let findStr = param.toLowerCase();
+    let table = {
+        "jabroni": "Patron Tequila",
+        "school counselor": "Anything with Alcohol",
+        "programmer": "Hipster Craft Beer",
+        "bike gang member": "Moonshine",
+        "politician": "Your tax dollars",
+        "rapper": "Cristal"
+    }
+    return Object.values(param);
 }
 
 
