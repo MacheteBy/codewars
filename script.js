@@ -1732,3 +1732,16 @@ function solution(str, ending) {
 }
 
 console.log(solution('abcde', 'abc'));
+
+
+//next
+function solution(str, ending) {
+    return str.substring(str.length - ending.length) == ending;
+}
+
+console.log(solution('abcde', 'de'));
+
+
+
+
+//next
