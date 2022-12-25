@@ -1803,18 +1803,28 @@ console.log(sumMix([9]));
 
 
 //next
+let table = {
+    "jabroni": "Patron Tequila",
+    "school counselor": "Anything with Alcohol",
+    "programmer": "Hipster Craft Beer",
+    "bike gang member": "Moonshine",
+    "politician": "Your tax dollars",
+    "rapper": "Cristal"
+}
+
 function getDrinkByProfession(param) {
-    let findStr = param.toLowerCase();
-    let table = {
-        "jabroni": "Patron Tequila",
-        "school counselor": "Anything with Alcohol",
-        "programmer": "Hipster Craft Beer",
-        "bike gang member": "Moonshine",
-        "politician": "Your tax dollars",
-        "rapper": "Cristal"
-    }
-    return Object.values(param);
+
 }
 
 
-console.log(getDrinkByProfession("scHOOl counselor"));
+
+Object.prototype.getKeyByValue = function(value) {
+    for(var prop in this) {
+        if(this.hasOwnProperty(prop)) {
+             if(this[prop] === value)
+                 return prop;
+        }
+    }
+}
+
+console.log(getDrinkByProfession("school counselor"));
