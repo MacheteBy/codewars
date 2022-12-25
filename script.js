@@ -1788,7 +1788,7 @@ function twoSort(s) {
 console.log(twoSort(["bitcoin", "take", "over", "the", "world", "maybe", "who", "knows", "perhaps"]));
 
 
-//next
+
 function sumMix(x){
     if(x.length > 1){
        return x.reduce((a, b) => Number(a) + Number(b)); 
@@ -1799,3 +1799,13 @@ function sumMix(x){
 
 
 console.log(sumMix([9]));
+
+
+
+//next
+function getDrinkByProfession(param){
+
+}
+
+
+console.log(getDrinkByProfession("scHOOl counselor"));
