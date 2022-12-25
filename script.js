@@ -1781,3 +1781,8 @@ console.log(arithmetic(1, 2, "add"));
 
 
 //next
+function twoSort(s) {
+
+}
+
+console.log(twoSort(["bitcoin", "take", "over", "the", "world", "maybe", "who", "knows", "perhaps"]));
