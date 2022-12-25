@@ -1790,8 +1790,12 @@ console.log(twoSort(["bitcoin", "take", "over", "the", "world", "maybe", "who", 
 
 //next
 function sumMix(x){
-    return x.reduce((a, b) => Number(a) + Number(b));
+    if(x.length > 1){
+       return x.reduce((a, b) => Number(a) + Number(b)); 
+    }else{
+        return Number(x[0]);
+    }
 }
 
 
-console.log(sumMix([9, 3, '7', '3']));
+console.log(sumMix([9]));
