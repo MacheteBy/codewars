@@ -1723,3 +1723,11 @@ function factorial(n) {
 }
 
 console.log(factorial(4));
+
+
+//next
+function solution(str, ending) {
+    
+}
+
+console.log(solution('abcde', 'cde'))
