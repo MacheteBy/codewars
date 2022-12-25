@@ -1764,3 +1764,9 @@ console.log(replace("!Hi! Hi!"));
 
 
 //next
+function arithmetic(a, b, operator) {
+    //your code here!
+}
+
+
+console.log(arithmetic(1, 2, "add"));
