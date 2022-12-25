@@ -1745,3 +1745,10 @@ console.log(solution('abcde', 'de'));
 
 
 //next
+function replace(s) {
+    let regex = /[aeiouAEIOU]/g;
+    return s.replace(regex, '!');
+}
+
+
+console.log(replace("!Hi! Hi!"));
