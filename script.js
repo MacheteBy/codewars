@@ -1815,11 +1815,10 @@ function getDrinkByProfession(param) {
     for (key in table) {
         if (key == param.toLowerCase()) {
             return table[key];
-        } else {
-            return "Beer";
         }
     }
+    return 'Beer';
 }
 
 
-console.log(getDrinkByProfession("school counselor"));
+console.log(getDrinkByProfession("schools counselor"));
