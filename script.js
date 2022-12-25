@@ -1727,7 +1727,8 @@ console.log(factorial(4));
 
 //next
 function solution(str, ending) {
-    
+    let newStr = str.substring(str.length - ending.length);
+    return newStr == ending;
 }
 
-console.log(solution('abcde', 'cde'))
+console.log(solution('abcde', 'abc'));
