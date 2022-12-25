@@ -1782,7 +1782,11 @@ console.log(arithmetic(1, 2, "add"));
 
 //next
 function twoSort(s) {
-
+    let resStr = '';
+    for(let i = 0; i < s.length; i++){
+        resStr += s[i][0] + ;
+    }
+    return resStr;
 }
 
 console.log(twoSort(["bitcoin", "take", "over", "the", "world", "maybe", "who", "knows", "perhaps"]));
