@@ -1826,7 +1826,7 @@ console.log(getDrinkByProfession("schools counselor"));
 
 //next
 function smallEnough(a, limit){
-    return a.sort((a, b) => a - b);
+    return Math.max(...a);
 }
 
 console.log(smallEnough([78, 117, 110, 99, 104, 117, 107, 115], 100));
