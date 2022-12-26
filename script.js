@@ -1825,7 +1825,7 @@ console.log(getDrinkByProfession("schools counselor"));
 
 
 //next
-function smallEnough(a, limit){
+function smallEnough(a, limit) {
     return Math.max(...a) <= limit ? true : false;
 }
 
@@ -1839,9 +1839,24 @@ console.log(smallEnough([78, 117, 110, 99, 104, 117, 107, 115], 100));
 
 
 //next
-function smallEnough(a, limit){
+function smallEnough(a, limit) {
     return a.every(x => x <= limit);
-  }
+}
 
 
-  console.log(smallEnough([78, 117, 110, 99, 104, 117, 107, 115], 100));
+console.log(smallEnough([78, 117, 110, 99, 104, 117, 107, 115], 100));
+
+
+
+
+//next
+function smallEnough(a, limit) {
+    for (var i of a) {
+        if (i > limit)
+            return false;
+    }
+    return true;
+}
+
+
+console.log(smallEnough([78, 117, 110, 99, 104, 117, 107, 115], 100));
