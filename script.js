@@ -1836,3 +1836,12 @@ console.log(smallEnough([78, 117, 110, 99, 104, 117, 107, 115], 100));
 smallEnough = (a, l) => a.every(e => e <= l)
 
 console.log(smallEnough([78, 117, 110, 99, 104, 117, 107, 115], 100));
+
+
+//next
+function smallEnough(a, limit){
+    return a.every(x => x <= limit);
+  }
+
+
+  console.log(smallEnough([78, 117, 110, 99, 104, 117, 107, 115], 100));
