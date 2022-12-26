@@ -1826,7 +1826,13 @@ console.log(getDrinkByProfession("schools counselor"));
 
 //next
 function smallEnough(a, limit){
-    return Math.max(...a);
+    return Math.max(...a) <= limit ? true : false;
 }
+
+console.log(smallEnough([78, 117, 110, 99, 104, 117, 107, 115], 100));
+
+
+//next
+smallEnough = (a, l) => a.every(e => e <= l)
 
 console.log(smallEnough([78, 117, 110, 99, 104, 117, 107, 115], 100));
