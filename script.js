@@ -1863,3 +1863,7 @@ console.log(smallEnough([78, 117, 110, 99, 104, 117, 107, 115], 100));
 
 
 console.log('раоцжщдяеэсфтвуо'.match(/[тоежвсдр]/g).join(''))
+
+
+
+console.log('secret =>', !undefined * 2000 + !null + !undefined + true + 20)
