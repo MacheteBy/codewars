@@ -1873,3 +1873,7 @@ console.log('secret =>', !undefined * 2000 + !null + !undefined + true + 20)
 let str = 'Воло\'дя "Марченков" ';
 
 console.log(str.replace(/['"]/gi, ''))
+console.log(str.regex(/['"]/gi, 0))
+
+
+console.log(Math.floor(Math.random() * (10 - 1) + 1));
