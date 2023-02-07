@@ -1887,7 +1887,12 @@ function hello() {
 const person = {
     name: 'Vladilen',
     age: 25,
-    sayHello: hello
+    sayHello: hello,
+    sayHelloWindow: hello.bind(this),
+    logInfo: function() {
+        console.log(`Name is ${this.name}`)
+        console.log(`Name is ${this.age}`)
+    }
 }
 
-console.log(person)
+console.log(person.logInfo())
