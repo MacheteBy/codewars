@@ -1889,10 +1889,23 @@ const person = {
     age: 25,
     sayHello: hello,
     sayHelloWindow: hello.bind(this),
-    logInfo: function() {
+    logInfo: function(job, phone) {
+        console.group(`${this.name} info:`)
         console.log(`Name is ${this.name}`)
         console.log(`Name is ${this.age}`)
+        console.log(`Job is ${job}`)
+        console.log(`Phone is ${phone}`)
+        console.groupEnd()
     }
 }
 
-console.log(person.logInfo())
+const lena = {
+    name: 'Elena',
+    age: 23
+}
+
+const fnLenaInfoLog = person.logInfo.bind(lena);
+
+
+// console.log(person.logInfo())
+console.log(fnLenaInfoLog('Frontend', '899912561'))
