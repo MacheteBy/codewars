@@ -1877,3 +1877,11 @@ console.log(str.regex(/['"]/gi, 0))
 
 
 console.log(Math.floor(Math.random() * (10 - 1) + 1));
+
+
+
+function hello() {
+    console.log('Hello', this)
+}
+
+console.log(hello())
