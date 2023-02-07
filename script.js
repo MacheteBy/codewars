@@ -1884,4 +1884,10 @@ function hello() {
     console.log('Hello', this)
 }
 
-console.log(hello())
+const person = {
+    name: 'Vladilen',
+    age: 25,
+    sayHello: hello
+}
+
+console.log(person)
