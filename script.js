@@ -1909,3 +1909,18 @@ const fnLenaInfoLog = person.logInfo.bind(lena);
 
 // console.log(person.logInfo())
 console.log(fnLenaInfoLog('Frontend', '899912561'))
+
+
+
+
+const obj = {
+    a: 10,
+    baseFunct: function() {
+        console.log(this);
+    },
+    arrowFunc: () => {
+        console.log(this);
+    }
+}
+
+console.log(obj.arrowFunc());
