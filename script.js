@@ -1922,5 +1922,38 @@ const obj = {
         console.log(this);
     }
 }
-
+console.log(obj.baseFunct());
 console.log(obj.arrowFunc());
+
+
+// incubator codewars
+
+
+
+function mango(quantity, price){
+    if(quantity < 3){
+        return quantity * price
+    } else {
+        return (quantity - Math.floor(quantity/3)) * price
+    }
+}
+
+console.log(mango(83, 24))
+
+// incubator codewars
+
+var cubeChecker = function(volume, side){
+    if(side > 0 && Number.isInteger(side)){
+        if(volume === side * side * side){
+            return true
+        } else {
+            return false
+        }
+    } else {
+        return false
+    }
+   
+  };
+
+
+  console.log(cubeChecker(1, 5))
