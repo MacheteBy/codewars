@@ -1889,7 +1889,7 @@ const person = {
     age: 25,
     sayHello: hello,
     sayHelloWindow: hello.bind(this),
-    logInfo: function(job, phone) {
+    logInfo: function (job, phone) {
         console.group(`${this.name} info:`)
         console.log(`Name is ${this.name}`)
         console.log(`Name is ${this.age}`)
@@ -1915,7 +1915,7 @@ console.log(fnLenaInfoLog('Frontend', '899912561'))
 
 const obj = {
     a: 10,
-    baseFunct: function() {
+    baseFunct: function () {
         console.log(this);
     },
     arrowFunc: () => {
@@ -1930,11 +1930,11 @@ console.log(obj.arrowFunc());
 
 
 
-function mango(quantity, price){
-    if(quantity < 3){
+function mango(quantity, price) {
+    if (quantity < 3) {
         return quantity * price
     } else {
-        return (quantity - Math.floor(quantity/3)) * price
+        return (quantity - Math.floor(quantity / 3)) * price
     }
 }
 
@@ -1942,9 +1942,9 @@ console.log(mango(83, 24))
 
 // incubator codewars
 
-var cubeChecker = function(volume, side){
-    if(side > 0 && Number.isInteger(side)){
-        if(volume === side * side * side){
+var cubeChecker = function (volume, side) {
+    if (side > 0 && Number.isInteger(side)) {
+        if (volume === side * side * side) {
             return true
         } else {
             return false
@@ -1952,8 +1952,43 @@ var cubeChecker = function(volume, side){
     } else {
         return false
     }
-   
-  };
+
+};
 
 
-  console.log(cubeChecker(1, 5))
+console.log(cubeChecker(1, 5))
+
+
+var s1 = ["hoqq", "bbllkw", "oox", "ejjuyyy", "plmiis", "xxxzgpsssa", "xxwwkktt", "znnnnfqknaz", "qqquuhii", "dvvvwz"];
+var s2 = ["cccooommaaqqoxii", "gggqaffhhh", "tttoowwwmmww"];
+
+function mxdiflg(a1, a2) {
+    if(a1.length <= 0 || a2.length <= 0){
+        return -1;
+    } else {
+        let a1Lenght = a1.map(elem => elem.length)
+        let a2Lenght = a2.map(elem => elem.length)
+        return Math.max(Math.max(...a1Lenght) - Math.min(...a2Lenght), Math.max(...a2Lenght) - Math.min(...a1Lenght))
+    }
+}
+
+console.log(mxdiflg(s1, s2))
+
+
+
+function check(a,x){
+    return a.includes(x);
+};
+
+
+console.log(check([0], 0));
+
+
+
+
+function sumOfDifferences(arr) {
+    sortArr = arr.sort((a, b) => b - a);
+    return arr.length > 1 ? sortArr[0] - sortArr[sortArr.length - 1] : 0
+}
+
+console.log(sumOfDifferences([1, 2, 10]))
