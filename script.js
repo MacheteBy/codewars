@@ -1992,3 +1992,31 @@ function sumOfDifferences(arr) {
 }
 
 console.log(sumOfDifferences([1, 2, 10]))
+
+
+
+function sumArray(array) {
+    if(array === null){
+        return 0
+    } else if (array.length < 2){
+        return 0
+    } else {
+        array = array.sort(function(a,b){ return a -b});
+        let total = 0;
+        for(let i = 1; i < array.length - 1; i++){
+            total += array[i]
+        }
+        return total
+    }
+}
+
+console.log(sumArray([6, 10]))
+
+
+function sumArray(array) {
+    if(array.length <= 2 || array === null){
+        return 0
+    } else{
+        return array.sort(function(a,b){return a-b}).reduce((acc, current) => acc+ current) - (array[0] + array[array.length - 1])
+    }
+}
