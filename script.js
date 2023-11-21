@@ -1963,7 +1963,7 @@ var s1 = ["hoqq", "bbllkw", "oox", "ejjuyyy", "plmiis", "xxxzgpsssa", "xxwwkktt"
 var s2 = ["cccooommaaqqoxii", "gggqaffhhh", "tttoowwwmmww"];
 
 function mxdiflg(a1, a2) {
-    if(a1.length <= 0 || a2.length <= 0){
+    if (a1.length <= 0 || a2.length <= 0) {
         return -1;
     } else {
         let a1Lenght = a1.map(elem => elem.length)
@@ -1976,7 +1976,7 @@ console.log(mxdiflg(s1, s2))
 
 
 
-function check(a,x){
+function check(a, x) {
     return a.includes(x);
 };
 
@@ -1996,14 +1996,16 @@ console.log(sumOfDifferences([1, 2, 10]))
 
 
 function sumArray(array) {
-    if(array === null){
+    if (array === null) {
         return 0
-    } else if (array.length < 2){
+    } else if (array.length < 2) {
         return 0
     } else {
-        array = array.sort(function(a,b){ return a -b});
+        array = array.sort(function (a, b) {
+            return a - b
+        });
         let total = 0;
-        for(let i = 1; i < array.length - 1; i++){
+        for (let i = 1; i < array.length - 1; i++) {
             total += array[i]
         }
         return total
@@ -2014,9 +2016,32 @@ console.log(sumArray([6, 10]))
 
 
 function sumArray(array) {
-    if(array.length <= 2 || array === null){
+    if (array.length <= 2 || array === null) {
         return 0
-    } else{
-        return array.sort(function(a,b){return a-b}).reduce((acc, current) => acc+ current) - (array[0] + array[array.length - 1])
+    } else {
+        return array.sort(function (a, b) {
+            return a - b
+        }).reduce((acc, current) => acc + current) - (array[0] + array[array.length - 1])
     }
 }
+
+
+
+function gimme(triplet) {
+    let newArr = [...triplet].sort((a, b) => a - b)
+    console.log(triplet)
+    console.log(newArr)
+    return triplet.indexOf(newArr[1])
+}
+
+
+console.log(gimme([2, 3, 1]))
+
+
+function largestPairSum(numbers) {
+    let newArr = numbers.sort((a, b) => a - b);
+    return newArr[newArr.length - 1] + newArr[newArr.length - 2];
+}
+
+
+console.log(largestPairSum([10,14,2,23,19]))
