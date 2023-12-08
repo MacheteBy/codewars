@@ -2044,7 +2044,7 @@ function largestPairSum(numbers) {
 }
 
 
-console.log(largestPairSum([10,14,2,23,19]))
+console.log(largestPairSum([10, 14, 2, 23, 19]))
 
 
 function longest(s1, s2) {
@@ -2057,13 +2057,21 @@ function longest(s1, s2) {
 console.log(longest("aretheyhere", "yestheyarehere"))
 
 
-function rainAmount(mm){
+function rainAmount(mm) {
     if (mm < 40) {
-         return `You need to give your plant ${40 - mm}mm of water`
-    }
-    else {
-         return 'Your plant has had more than enough water for today!'
+        return `You need to give your plant ${40 - mm}mm of water`
+    } else {
+        return 'Your plant has had more than enough water for today!'
     };
 }
 
 console.log(rainAmount(39))
+
+
+
+function hello(name) {
+    return (name !== undefined && name.length > 0) ? "Hello, " + name.slice(0, 1).toUpperCase() + name.slice(1).toLowerCase() + "!" : "Hello, World!";
+}
+
+console.log(hello())
+
