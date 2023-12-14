@@ -2106,4 +2106,6 @@ function array(string) {
     }
 }
 
+const array = (string) => string.split(',').slice(1, -1).join(' ')
+
 console.log(array('1,2,3,4'))
