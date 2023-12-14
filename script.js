@@ -2092,3 +2092,18 @@ function xor(a, b) {
 const xor = (a, b) => a !== b ? true : false
 
 console.log(xor(true, true))
+
+
+function array(string) {
+    let arr = string.split(',')
+    if (arr.length > 2) {
+        let firstDel = arr.pop()
+        let lastDel = arr.shift()
+        let result = arr.join(' ')
+        return result
+    } else {
+        return null
+    }
+}
+
+console.log(array('1,2,3,4'))
