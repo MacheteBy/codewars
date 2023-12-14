@@ -2082,3 +2082,16 @@ function nameShuffler(str) {
 }
 
 console.log(nameShuffler('john McClane'))
+
+
+
+function xor(a, b) {
+    if (a === true || b === true) {
+        return true
+    } else {
+        return false
+    }
+}
+
+
+console.log(xor(true, true))
