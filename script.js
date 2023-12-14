@@ -2084,14 +2084,11 @@ function nameShuffler(str) {
 console.log(nameShuffler('john McClane'))
 
 
-
+//1 variant
 function xor(a, b) {
-    if (a === true || b === true) {
-        return true
-    } else {
-        return false
-    }
+    return a !== b
 }
-
+//2 variant
+const xor = (a, b) => a !== b ? true : false
 
 console.log(xor(true, true))
