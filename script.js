@@ -2162,3 +2162,9 @@ console.log(equal3())
 console.log(equal4())
 console.log(equal5())
 
+
+var findAverage = function (nums) {
+    // Code here
+}
+
+console.log(findAverage())
