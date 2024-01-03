@@ -2168,3 +2168,23 @@ var findAverage = function (nums) {
 }
 
 console.log(findAverage([1, 3, 5, 7]))
+
+
+
+function getSize(width, height, depth) {
+    let area = 2 * depth * width + 2 * height * width + 2 * depth * height
+    let volume = width * height * depth
+    return [area, volume]
+}
+
+
+console.log(getSize(4, 2, 6))
+
+
+
+function twoDecimalPlaces(n) {
+    return Number(n.toFixed(2))
+}
+
+
+console.log(twoDecimalPlaces(3.3424))
