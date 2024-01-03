@@ -2164,7 +2164,7 @@ console.log(equal5())
 
 
 var findAverage = function (nums) {
-    // Code here
+    return nums.reduce((acc, currentValue) => acc + currentValue) / nums.length
 }
 
-console.log(findAverage())
+console.log(findAverage([1, 3, 5, 7]))
