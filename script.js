@@ -2188,3 +2188,40 @@ function twoDecimalPlaces(n) {
 
 
 console.log(twoDecimalPlaces(3.3424))
+
+
+function plural(n) {
+    return n < 1 || n > 1
+}
+
+console.log(plural(0.5))
+
+
+var SequenceSum = (function () {
+    function SequenceSum() {}
+    
+    SequenceSum.showSequence = function (count) {
+        let resault = 0
+        let countValue = 0
+        let string = '0'
+        if(count < 0){
+            return `${count}<0`
+        }
+        if(count === 0){
+            return `${count}=0`
+        }
+        for(let i = 0; i <= count; i++){
+            resault += i
+        }
+        while(countValue < count){
+            countValue++
+            string += `+${countValue}`
+        }
+        return `${string} = ${resault}`
+    };
+
+    return SequenceSum;
+
+})();
+
+console.log(SequenceSum.showSequence(6))
