@@ -2199,21 +2199,21 @@ console.log(plural(0.5))
 
 var SequenceSum = (function () {
     function SequenceSum() {}
-    
+
     SequenceSum.showSequence = function (count) {
         let resault = 0
         let countValue = 0
         let string = '0'
-        if(count < 0){
+        if (count < 0) {
             return `${count}<0`
         }
-        if(count === 0){
+        if (count === 0) {
             return `${count}=0`
         }
-        for(let i = 0; i <= count; i++){
+        for (let i = 0; i <= count; i++) {
             resault += i
         }
-        while(countValue < count){
+        while (countValue < count) {
             countValue++
             string += `+${countValue}`
         }
@@ -2225,3 +2225,36 @@ var SequenceSum = (function () {
 })();
 
 console.log(SequenceSum.showSequence(6))
+
+
+
+function derive(coefficient, exponent) {
+    return `${coefficient * exponent}x^${exponent < 2 ? exponent : exponent - 1}`
+}
+
+
+console.log(derive(7, 8))
+
+
+function expressionMatter(a, b, c) {
+    let resMax = 0;
+    if(resMax < a * (b + c)){
+        resMax = a * (b + c)
+    }
+    if(resMax < a * b * c){
+        resMax = a * b * c
+    }
+    if(resMax < a + b * c){
+        resMax = a + b * c
+    }
+    if(resMax < (a + b) * c){
+        resMax = (a + b) * c
+    }
+    if(resMax < a + b + c){
+        resMax = a + b + c
+    }
+    return resMax
+}
+
+
+console.log(expressionMatter(2, 1, 2))
