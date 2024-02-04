@@ -2238,19 +2238,19 @@ console.log(derive(7, 8))
 
 function expressionMatter(a, b, c) {
     let resMax = 0;
-    if(resMax < a * (b + c)){
+    if (resMax < a * (b + c)) {
         resMax = a * (b + c)
     }
-    if(resMax < a * b * c){
+    if (resMax < a * b * c) {
         resMax = a * b * c
     }
-    if(resMax < a + b * c){
+    if (resMax < a + b * c) {
         resMax = a + b * c
     }
-    if(resMax < (a + b) * c){
+    if (resMax < (a + b) * c) {
         resMax = (a + b) * c
     }
-    if(resMax < a + b + c){
+    if (resMax < a + b + c) {
         resMax = a + b + c
     }
     return resMax
@@ -2258,3 +2258,31 @@ function expressionMatter(a, b, c) {
 
 
 console.log(expressionMatter(2, 1, 2))
+
+
+
+function sayHello(name, city, state) {
+    return `Hello, ${name[0]} ${name[1]}${name.length > 2 ? ' ' + name[2] : ''}${name.length > 3 ? ' ' + name[3] : ''}! Welcome to ${city}, ${state}!`
+}
+
+console.log(sayHello(['John', 'Smith'], 'Phoenix', 'Arizona'))
+
+
+function take(arr, n) {
+    return arr.slice(0, n)
+}
+
+console.log(take([0, 1, 2, 3, 5, 8, 13], 3))
+
+
+function minValue(values) {
+    return Number(values.sort().filter((element, index) => values.indexOf(element) === index).slice(0, values.length).join(''))
+}
+
+console.log(minValue([3, 6, 5, 5, 9, 8, 7, 6, 3, 5, 9]))
+
+function minValue2(values) {
+    return Number(Array.from(new Set(values)).join(''))
+}
+
+console.log(minValue2([1, 3, 1]))
