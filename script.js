@@ -2286,3 +2286,35 @@ function minValue2(values) {
 }
 
 console.log(minValue2([1, 3, 1]))
+
+
+const counterCreater = () => {
+    let count = 0
+
+    return () => {
+        console.log(++count)
+    }
+}
+
+const counter1 = counterCreater()
+
+counterCreater()
+counterCreater()
+counterCreater()
+
+
+function delay(ms) {
+    return Promise.resolve(() => {
+    }, ms)
+}
+
+delay(2000).then(() => console.log("Hello"))
+
+
+
+Promise.resolve('reject1')
+.catch((t) => t + 'catch1')
+.catch((t) => t + 'catch2')
+.then((t) =>  t + 'then1')
+.finally((t) => t + 'finally')
+.then((t) => console.log(t));
