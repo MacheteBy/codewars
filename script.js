@@ -2304,8 +2304,7 @@ counterCreater()
 
 
 function delay(ms) {
-    return Promise.resolve(() => {
-    }, ms)
+    return Promise.resolve(() => {}, ms)
 }
 
 delay(2000).then(() => console.log("Hello"))
@@ -2313,8 +2312,39 @@ delay(2000).then(() => console.log("Hello"))
 
 
 Promise.resolve('reject1')
-.catch((t) => t + 'catch1')
-.catch((t) => t + 'catch2')
-.then((t) =>  t + 'then1')
-.finally((t) => t + 'finally')
-.then((t) => console.log(t));
+    .catch((t) => t + 'catch1')
+    .catch((t) => t + 'catch2')
+    .then((t) => t + 'then1')
+    .finally((t) => t + 'finally')
+    .then((t) => console.log(t));
+
+
+
+function findMultiples(integer, limit) {
+    let count = Math.floor(limit / integer)
+    let resArr = []
+    for (let i = 1; i <= count; i++) {
+        resArr.push(i * integer)
+    }
+    return resArr
+}
+
+console.log(findMultiples(5, 26))
+
+
+function findMultiples(integer, limit) {
+    return Array(Math.floor(limit / integer)).fill(1).map((x, i) => integer * (i + x))
+}
+
+console.log(findMultiples(5, 26))
+
+
+function sumCubes(n) {
+    let res = 0;
+    for(let i = 1; i <= n; i++){
+        res+= Math.pow(i, 3)
+    }
+    return res
+}
+
+console.log(sumCubes(3))
