@@ -2341,10 +2341,75 @@ console.log(findMultiples(5, 26))
 
 function sumCubes(n) {
     let res = 0;
-    for(let i = 1; i <= n; i++){
-        res+= Math.pow(i, 3)
+    for (let i = 1; i <= n; i++) {
+        res += Math.pow(i, 3)
     }
     return res
 }
 
 console.log(sumCubes(3))
+
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+let iAm = {
+    firstName: 'Vladimir',
+    lastName: 'Marchenkov',
+    birthday: '1994-01-18T00:25',
+    location: {
+        country: 'Belarus',
+        city: 'Mogilev',
+    },
+    memory: {
+        family: [
+            '2016-08-17',
+            '2020-06-12',
+            '2022-03-06',
+            '2024-03-08',
+        ]
+    },
+    newLife: {
+        start: '2023-09-14',
+        end: '',
+    }
+}
+
+
+console.log(iAm)
+//----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+function getEvenNumbers(numbersArray) {
+    return numbersArray.filter(num => num % 2 === 0)
+}
+
+console.log(getEvenNumbers([12, 14, 15]))
+
+
+function bouncingBall(h, bounce, window) {
+    const check = h > 0 && bounce > 0 && bounce < 1 && window < h
+    if (check) {
+        let conter = 1
+        h = h * bounce
+        while (h > window) {
+            conter += 2
+            h = h * bounce
+        }
+        return conter
+    } else {
+        return -1
+    }
+}
+
+console.log(bouncingBall(30.0, 0.66, 1.5))
+
+
+
+function check(a, x) {
+    let res = a.filter(el => el === x)
+    return res.length > 0 ? true : false
+}
+
+console.log(check([101, 45, 0, 105, 99, 107], 10))
+
+
+console.log([4, 5, 8, 12].find(5));
