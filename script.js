@@ -2413,3 +2413,15 @@ console.log(check([101, 45, 0, 105, 99, 107], 10))
 
 
 console.log([4, 5, 8, 12].find(5));
+
+
+function howMuchILoveYou(nbPetals) {
+    let love = ["I love you", "a little", "a lot", "passionately", "madly", "not at all"]
+    for(let i = 0; i <= nbPetals; i++){
+        love.push(love[i])
+    }
+    return love[nbPetals - 1]
+}
+
+console.log(howMuchILoveYou(450))
+
