@@ -2426,6 +2426,18 @@ function howMuchILoveYou(nbPetals) {
 console.log(howMuchILoveYou(450))
 console.log(howMuchILoveYou(320))
 
+console.log(howMuchILoveYou(320))
+console.log(howMuchILoveYou(222))
+console.log(howMuchILoveYou(452))
+console.log(howMuchILoveYou(771))
+console.log(howMuchILoveYou(1278))
+
+
+
+
+
+
+
 
 
 
