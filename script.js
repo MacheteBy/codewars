@@ -2424,4 +2424,10 @@ function howMuchILoveYou(nbPetals) {
 }
 
 console.log(howMuchILoveYou(450))
+console.log(howMuchILoveYou(320))
+
+
+
+
+
 
