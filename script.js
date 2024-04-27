@@ -2417,7 +2417,7 @@ console.log([4, 5, 8, 12].find(5));
 
 function howMuchILoveYou(nbPetals) {
     let love = ["I love you", "a little", "a lot", "passionately", "madly", "not at all"]
-    for(let i = 0; i <= nbPetals; i++){
+    for (let i = 0; i <= nbPetals; i++) {
         love.push(love[i])
     }
     return love[nbPetals - 1]
@@ -2434,12 +2434,37 @@ console.log(howMuchILoveYou(1278))
 
 
 
+multiplicationTable = function (size) {
+    let resArr = []
+    for (let i = 1; i <= size; i++) {
+        let res = []
+        for (let j = 1; j <= size; j++) {
+            res.push(i * j)
+        }
+        resArr.push(res)
+    }
+    return resArr
+}
+
+console.log(multiplicationTable(3))
 
 
+function animal(obj) {
+    return `This ${obj.color} ${obj.name} has ${obj.legs} legs.`
+}
+
+console.log(animal({
+    name: "dog",
+    legs: 4,
+    color: "white"
+}))
 
 
+function whatday(num) {
+    const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+    return num <= 7 ? weekday[num-1] : 'Wrong, please enter a number between 1 and 7'
+}
 
+whatday = num => ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"][num-1] || 'Wrong, please enter a number between 1 and 7'
 
-
-
-
+console.log(whatday(7))
