@@ -2462,9 +2462,17 @@ console.log(animal({
 
 function whatday(num) {
     const weekday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
-    return num <= 7 ? weekday[num-1] : 'Wrong, please enter a number between 1 and 7'
+    return num <= 7 ? weekday[num - 1] : 'Wrong, please enter a number between 1 and 7'
 }
 
-whatday = num => ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"][num-1] || 'Wrong, please enter a number between 1 and 7'
+whatday = num => ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"][num - 1] || 'Wrong, please enter a number between 1 and 7'
 
 console.log(whatday(7))
+
+
+function sum(a) {
+    return b => a + b
+}
+
+
+console.log(sum(1)(2)) //3
