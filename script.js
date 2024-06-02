@@ -2476,3 +2476,21 @@ function sum(a) {
 
 
 console.log(sum(1)(2)) //3
+
+
+const toJadenCase = (str) => {
+    return (str.split(' ').map((el) => el[0][0].toUpperCase() + el.slice(1))).join(' ')
+};
+
+console.log(toJadenCase("How can mirrors be real if our eyes aren't real"))
+
+// return this.split(' ')
+//     .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+//     .join(' ');
+
+
+function duplicateCount(text) {
+    return new Set(text.toLowerCase().split('').filter((e, i, a) => a.indexOf(e) !== i)).size
+}
+
+console.log(duplicateCount("Indivisibility"))
